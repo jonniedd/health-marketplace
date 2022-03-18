@@ -1368,14 +1368,15 @@ input[type="submit"]{
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    background: rgba(136, 185, 160, 0.534);
-    border: 2px solid rgba(1, 85, 41, 0.534);
+    background: rgba(100, 136, 117, 0.534);
+    border: 2px solid rgba(39, 117, 77, 0.534);
     color: white;
     cursor: pointer;
     outline: none;
     transition: 0.2s ease;
 }
 input[type="submit"]:hover{
+    background: rgba(136, 185, 160, 0.534);
     border: 2px solid #80fff480;
     font-size: 19px;
     font-family: 'Raleway', sans-serif;
