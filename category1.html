@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Health Dispensary E-Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script> src="https://kit.fontaesome.com/a076d05399.js"</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+</head>          
+<body>
+    <nav class="navbar2">
+        <div class="max-width">
+             <div class="logo"><a href="home.html"><img src="Attachments/Logo/logo.png"></a></div>
+             <div class="search">
+                <form action="" method ="" class="search-bar">
+                    <input type="text" placeholder="Browse Items   .   .   ." name ="q">
+                    <button type="submit"><img src="Attachments/Icons/searchicon.png"></button>
+                </form>
+            </div>
+             <ul class="menu">
+                 <div class="border-box">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li> 
+                    <li><a href="about.html">About Us</a></li> 
+                    <li><a href="home.html">Tesimonials</a></li> 
+                    <li><a href="home.html">Blogs</a></li> 
+                    <li><a href="home.html">Contact Us</a></li>
+                    <li><a id="cart-btn" href="home.html"><span class="fa fa-shopping-cart" style="font-size:22px"></span></a></li> 
+                    <li><a href="login.html"><span class="fa fa-user-circle-o" style="font-size:20px"></span></a></li> 
+                 </div>
+             </ul>
+        </div>
+     </nav>
+     <nav class="sub-navbar">
+        <div class="max-width">
+             <ul class="menu"> 
+                 <div class="border-box">
+                     <!-- <li><a href="#"><span id="bars-btn" class="fa fa-bars" style="font-size:15px"></span></a></li> 
+                    <button onclick="myFunction()" class="bars"><span class="fa fa-bars" style="font-size:15px"></span></button>
+                    -->
+                    <li><a href="#" class="bars"><span class="fa fa-bars" style="font-size:15px"></span></a></li> 
+                    <li><a href="#natural">Natural Medicine</a></li>
+                    <li><a href="#prescription">Prescription Medication</a></li>
+                    <li><a href="#supplement">Supplements</a></li>
+                    <li><a href="#coughncold">Cough & Cold</a></li>
+                    <li><a href="#painreliever">Pain Relievers</a></li>
+                    <li><a href="#allergy">Allergies</a></li>
+                    <li><a href="#firstaid">First-Aid</a></li>
+                    <li><a href="#skincare">Skin Care</a></li>
+                    <li><a href="#haircare">Hair Care</a></li>
+                    <li><a href="#eyecare">Eye Care</a></li>
+                    <li><a href="#footcare">Foot Care</a></li>
+                    <li><a href="#feminine">Feminine Care</a></li>
+                 </div>
+             </ul>
+        </div> 
+     </nav>
+     <nav class="sidebar">
+         <div class="sidebar-content">
+            <div class="text">
+                <span>Browse Below</span>
+                <p id = "shoppingbag" class="fa fa-shopping-bag" aria-hidden="true"></p>
+                <i id="close" class="fa fa-close"></i>
+           </div>
+            <ul>
+               <li>
+                   <a href="#" class="dep1-btn">Natural Medicine
+                       <span id="angle" class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-1">
+                       <li><a href="#">Ayurveda</a></li>
+                       <li><a href="#">Homeopathy</a></li>
+                       <li><a href="#">Aromatherapy</a></li>
+                       <li><a href="#">Herbal Medicine</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep2-btn">Prescription Medication
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-2">
+                       <li><a href="#">Track your Prescription & Refills</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep3-btn">Supplements
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-3">
+                       <li><a href="#">Vitamins and Minerals</a></li>
+                       <li><a href="#">Herbals and Botanicals</a></li>
+                       <li><a href="#">Specialty Supplements</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep4-btn">Cough & Cold
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-4">
+                       <li><a href="#">Nasal Decongestants</a></li>
+                       <li><a href="#">Cough Suppressants</a></li>
+                       <li><a href="#">Expectorants</a></li>
+                       <li><a href="#">Antihistamines</a></li>
+                       <li><a href="#">Pain Relievers</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep5-btn">Pain Relievers
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-5">
+                       <li><a href="#">Acetaminophen</a></li>
+                       <li><a href="#">Nonsteroidal Anti-Inflammatory (NSAID)</a></li>
+                       <li><a href="#">Combo (Acetaminophen & NSAID)</a></li>
+                       <li><a href="#">Topical Pain Relievers</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep6-btn">Allergies
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-6">
+                       <li><a href="#">Pills and Liquids</a></li>
+                       <li><a href="#">Nasal Sprays</a></li>
+                       <li><a href="#">Eyedrops</a></li>
+                       <li><a href="#">Topical Allergy Relief</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep7-btn">First-Aid
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-7">
+                       <li><a href="#">Kits</a></li>
+                       <li><a href="#">Bandages</a></li>
+                       <li><a href="#">Dressings & Gauze</a></li>
+                       <li><a href="#">Tapes</a></li>
+                       <li><a href="#">Sponges</a></li>
+                       <li><a href="#">Wound Cleansers</a></li>
+                       <li><a href="#">Wound Care</a></li>
+                   </ul>
+               </li>
+               <li>
+                    <a href="#" class="dep8-btn">Skin Care
+                        <span class="fa fa-angle-right first"></span>
+                    </a>
+                    <ul class="subpages-8">
+                        <li><a href="#">Lotions & Moisturizers</a></li>
+                        <li><a href="#">Cleansers</a></li>
+                        <li><a href="#">Face Masks & Treatments</a></li>
+                        <li><a href="#">Polishes & Scrubs</a></li>
+                        <li><a href="#">Toners & Astringents</a></li>
+                        <li><a href="#">Sunscreens & Tanning Oils</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dep9-btn">Hair Care
+                        <span class="fa fa-angle-right first"></span>
+                    </a>
+                    <ul class="subpages-9">
+                        <li><a href="#">Scalp Treatments</a></li>
+                        <li><a href="#">Hair Masks</a></li>
+                        <li><a href="#">Treatment Oils</a></li>
+                        <li><a href="#">Shampoo & Conditioners</a></li>
+                        <li><a href="#">Styling Products</a></li>
+                        <li><a href="#">Hair Loss Products</a></li>
+                    </ul>
+                </li>
+               <li>
+                   <a href="#" class="dep10-btn">Eye Care
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-10">
+                       <li><a href="#">Contact Lense Care</a></li>
+                       <li><a href="#">Eye Drops & Eye Lubricants</a></li>
+                       <li><a href="#">Eye Washes</a></li>
+                       <li><a href="#">Topical Eye Treatments</a></li>
+                       <li><a href="#">Order Contacts</a></li>
+                   </ul>
+               </li>
+               <li>
+                <a href="#" class="dep11-btn">Foot Care
+                    <span class="fa fa-angle-right first"></span>
+                </a>
+                <ul class="subpages-11">
+                    <li><a href="#">Foot Creams & Treatments</a></li>
+                    <li><a href="#">Foot & Leg Massagers</a></li>
+                    <li><a href="#">Diabetic Foot Care</a></li>
+                    <li><a href="#">Athlete's Foot & Antifungal</a></li>
+                    <li><a href="#">Foot Odor Control</a></li>
+                    <li><a href="#">Corns, Calluses, Blisters & Bunions Relief</a></li>
+                </ul>
+            </li>
+               <li>
+                   <a href="#" class="dep12-btn">Feminine Care
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-12">
+                       <li><a href="#">Pads</a></li>
+                       <li><a href="#">Pantiliners</a></li>
+                       <li><a href="#">Tampons</a></li>
+                       <li><a href="#">Menstrual Cups</a></li>
+                       <li><a href="#">Menstrual Pain Relief</a></li>
+                       <li><a href="#">Bladder Health</a></li>
+                       <li><a href="#">Yeast Infections</a></li>
+                       <li><a href="#">Menopause Relief</a></li>
+                   </ul>
+               </li>
+            </ul>
+         </div>
+     </nav>
+  <body>
+    <section class="category-section" id="category-section">
+        <div class="cat-overlay"></div> 
+      <!--Indicator-->
+        <section class="indicator">
+                <div class="indicator-inner">
+                    <div class="indicator-text">
+                        <p>Home / Natural Medicine</p>
+                    </div>
+                </div>
+            </section>
+        <!---Side bar-->
+            <div class="category-container">
+                    <aside class="side-filter">
+                        <div class="side-title">
+                            <h3>Natural Medicine</h3>
+                        </div>
+                        <div class="side-content">
+                            <ul class="filter-list"><p>More Categories</p>
+                                <li>
+                                    <input type="radio" aria-label="radio-button" id="filter-btn">
+                                            <a href="">Ayurveda</a></li>
+                                            <li>
+                                    <input type="radio" aria-label="radio-button" id="filter-btn">
+                                            <a href="">Homeopathy</a></li>
+                                            <li>
+                                    <input type="radio" aria-label="radio-button" id="filter-btn">
+                                        <a href="">Aromatherapy</a></li>
+                                        <li>
+                                    <input type="radio"aria-label="radio-button" id="filter-btn">
+                                            <a href="">Herbal Medicine</a></li>
+                                            <li>
+                                </li>                  
+                            </ul>
+                            <ul class="filter-list"><p>Color</p>
+                            <li>
+                                <input type="radio" aria-label="radio-button" id="filter-btn">
+                                    <a href="">Vegan</a></li>
+                                    <li>
+                                <input type="radio" aria-label="radio-button" id="filter-btn">
+                                    <a href="">Black Leather</a></li>
+                                    <li>
+                                <input type="radio" aria-label="radio-button" id="filter-btn">
+                                    <a href="">Black with Red</a></li>
+                                    <li>
+                                <input type="radio" aria-label="radio-button" id="filter-btn">
+                                    <a href="">Gold</a></li>
+                                    <li>
+                                <input type="radio" aria-label="radio-button" id="filter-btn">
+                                    <a href="">Space grey</a></li>         
+                            </ul>
+                        </div>
+                    </aside>
+                    <!--Cart-Mini-Display-->
+                    <div class="mini-cart-display">
+                        <div class="mini-list">
+                            <ul class="mini-cart-product" id="mini-cart-product">
+                                <li id="mini-cart-item">
+                                    <div class="mini-cart-box">
+                                        <i id="mini-delete" class="fa fa-times"></i>
+                                        <img id="mini-img" src="h-image2.png" alt="">
+                                        <div class="mini-cart-content">
+                                            <h3 class="mini-cart-item-name" >Item 1</h3>
+                                            <span class="mini-quantity">4</span>
+                                            <span id="x-symbol" class="mini-multiply">x</span>
+                                            <span class="mini-price">$10.20</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li id="mini-cart-item">
+                                    <div class="mini-cart-box">
+                                        <i id="mini-delete" class="fa fa-times"></i>
+                                        <img id="mini-img" src="h-image2.png" alt="">
+                                        <div class="mini-cart-content">
+                                            <h3 class="mini-cart-item-name" >Item 1</h3>
+                                            <span class="mini-quantity">2</span>
+                                            <span id="x-symbol" class="mini-multiply">x</span>
+                                            <span class="mini-price">$20.50</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="mini-total">Total: <span id="mini-total"></span></h3>
+                        <a href="" class="mini-checkout-btn" >Checkout Cart</a>
+                    </div>
+                </div>
+                <div class="modal-overlay" role="dialog"></div>
+                    <div class="modal" role="alert">
+                        <button class="modal-close" role="button">X</button>
+                        <div class="modal-content" id="modal-content">
+                            <h1 id="modal-product-name" >Product 1</h1>
+                            <img class="modal-product-img" id ="item-img2" src="Attachments/Sample-Products/sample1.jpeg" alt="">
+                            <p class="star2">
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                            </p> 
+                            <span id="item-price2">$20.00</span>
+                            <div class="item-description2" id="product-reviews-section">
+                                <p>Item Description:<br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, est. Aspernatur, aut. Aliquam, laudantium libero hic impedit at placeat, ad iusto ex accusamus quod unde corrupti similique beatae eaque eligendi.</p>
+                            </div>
+                            <div class="item-ingredients">
+                                <p>Item Ingredients:<br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, est. Aspernatur, aut. Aliquam, laudantium libero hic impedit at placeat, ad iusto ex accusamus quod unde corrupti similique beatae eaque eligendi.</p>
+                            </div>
+                            <button type="button" onclick="addMiniCart(modal-content)" class="item-add-btn2" id="item-add-btn2">
+                                <p>Add to Cart</p>
+                            </button>
+                            <span id="q-label">quantity</span>
+                            <div class="quantity-btn">
+                                <button class="q-btn1" id="q-btns" type="decrement()">-</button>
+                                    <h2 data-count="0" id="quantity"></h2>
+                                <button class="q-btn2" id="q-btns" type="increment()">+</button>
+                            </div>
+                            <a id="scroll-to-reviews" href="#product-reviews-section">
+                                <span id="reviews-label"><p id="r-quantity">999</p>&nbsp;Reviews</span>
+                            </a>
+                            <div class="review-form-title">
+                                <span>Write a Review</span>
+                            </div>
+                            <div class="review-form">
+                                <div class="review-form-container">
+                                    <div class="post">
+                                      <div class="text">Thanks for rating us!</div>
+                                      <div class="edit">EDIT</div>
+                                    </div>
+                                    <div class="star-widget">
+                                      <input type="radio" name="rate" id="rate-5">
+                                      <label for="rate-5" class="fas fa-star"></label>
+                                      <input type="radio" name="rate" id="rate-4">
+                                      <label for="rate-4" class="fas fa-star"></label>
+                                      <input type="radio" name="rate" id="rate-3">
+                                      <label for="rate-3" class="fas fa-star"></label>
+                                      <input type="radio" name="rate" id="rate-2">
+                                      <label for="rate-2" class="fas fa-star"></label>
+                                      <input type="radio" name="rate" id="rate-1">
+                                      <label for="rate-1" class="fas fa-star"></label>
+                                      <form class="actual-form" action="#">
+                                        <header></header>
+                                        <div class="review-users-name">
+                                            <textarea id="review-users-name" cols="30" placeholder="Your Name"></textarea>
+                                          </div>
+                                        <div class="review-user-text">
+                                          <textarea id="review-user-text" cols="30" placeholder="Describe your experience.."></textarea>
+                                        </div>
+                                        <div id="post-btn" class="post-btn">
+                                          <button onclick="createReview()" type="submit">Post</button>
+                                        </div>
+                                      </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-reviews">
+                                <section class="product-reviews-section">
+                                    <!--heading--->
+                                    <div class="product-reviews-title">
+                                        <span>Reviews</span>
+                                    </div>
+                                    <!--testimonials-box-container------>
+                                    <div class="product-reviews-container">
+                                        <!--BOX-1-------------->
+                                        <div class="review-box" id="tester-review-box">
+                                            <!--top------------------------->
+                                            <div class="review-box-top">
+                                                <!--profile----->
+                                                <div class="user-profile">
+                                                    <!--img---->
+                                                    <div class="user-profile-img">
+                                                        <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png"/>
+                                                    </div>
+                                                    <!--name-and-username-->
+                                                    <div class="users-name">
+                                                        <strong id="u-name" >Sarah Jacobs</strong>
+                                                        <span id="u-date">Date Created: 4/1/2022</span>
+                                                    </div>
+                                                </div>
+                                                <!--reviews------>
+                                                <div class="star-rating">
+                                                    <i id="star1" class="fa fa-star"></i>
+                                                    <i id="star2" class="fa fa-star"></i>
+                                                    <i id="star3" class="fa fa-star"></i>
+                                                    <i id="star4" class="fa fa-star"></i>
+                                                    <i id="star5" class="fa fa-star-o"></i><!--Empty star-->
+                                                </div>
+                                            </div>
+                                            <!--Comments---------------------------------------->
+                                            <div id="user-review-text" class="user-review-text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                  </section>
+                            </div>
+                        </div>
+                     </div>
+        <!---Product List-->
+            <div class="product-grid-wrapper">
+                <div class="product-grid-container">
+                    <div class="display-style-btns">
+                        <button type="submit" data-inline="true" id="details-active-btn" class="mini-cart-btn">
+                            <i class="fa fa-shopping-cart" style="font-size: 18px;"></i>
+                        </button>
+                        <button type="button"  data-inline="true" id="grid-active-btn">
+                            <i class="fa fa-th" style="font-size: 18px;"></i>
+                        </button>
+                        <button type="button" data-inline="true" id="details-active-btn">
+                            <i class="fa fa-list" style="font-size: 18px;"></i>
+                        </button>
+                    </div>
+                    <div class="item-list">
+                        <div class="item-box"> <!--ITEM 1-->
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                            <div class="item-img">
+                                <button class="open-modal-btn" aria-haspopup="true">More</button>
+                                <img id ="item-img" src="Attachments/Sample-Products/sample1.jpeg" alt="">
+                                <button type="button" class="item-add-btn" id="item-add-btn">
+                                    <p>Add to Cart</p>
+                                    <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                                </button>
+                            </div>
+                            <div class="item-details">
+                                <a href="#" class="item-name">Tumeric Tablets</a>
+                                <div class="item-price">
+                                    <span class="new-price">$10.00</span>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="item-box"> <!--ITEM 2-->
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                            <div class="item-img">
+                                <button class="open-modal-btn" aria-haspopup="true">More</button>
+                                <img id ="item-img" src="Attachments/Sample-Products/sample2.jpeg" alt="">
+                                <button type="button" class="item-add-btn" id="item-add-btn">
+                                    <p>Add to Cart</p>
+                                    <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                                </button>
+                            </div>
+                            <div class="item-details">
+                                <a href="#" class="item-name">Tumeric Tablets</a>
+                                <div class="item-price">
+                                    <span class="new-price">$10.00</span>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="item-box"> <!--ITEM 3-->
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                            <div class="item-img">
+                                <button class="open-modal-btn" aria-haspopup="true">More</button>
+                                <img id ="item-img" src="Attachments/Sample-Products/sample3.jpeg" alt="">
+                                <button type="button" class="item-add-btn" id="item-add-btn">
+                                    <p>Add to Cart</p>
+                                    <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                                </button>
+                            </div>
+                            <div class="item-details">
+                                <a href="#" class="item-name">Tumeric Tablets</a>
+                                <div class="item-price">
+                                    <span class="new-price">$10.00</span>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="item-box"> <!--ITEM 4-->
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                            <div class="item-img">
+                                <button class="open-modal-btn" aria-haspopup="true">More</button>
+                                <img id ="item-img" src="Attachments/Sample-Products/sample4.jpeg" alt="">
+                                <button type="button" class="item-add-btn" id="item-add-btn">
+                                    <p>Add to Cart</p>
+                                    <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                                </button>
+                            </div>
+                            <div class="item-details">
+                                <a href="#" class="item-name">Tumeric Tablets</a>
+                                <div class="item-price">
+                                    <span class="new-price">$10.00</span>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="item-box"> <!--ITEM 5-->
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                            <div class="item-img">
+                                <button class="open-modal-btn" aria-haspopup="true">More</button>
+                                <img id ="item-img" src="Attachments/Sample-Products/sample5.jpeg" alt="">
+                                <button type="button" class="item-add-btn" id="item-add-btn">
+                                    <p>Add to Cart</p>
+                                    <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                                </button>
+                            </div>
+                            <div class="item-details">
+                                <a href="#" class="item-name">Tumeric Tablets</a>
+                                <div class="item-price">
+                                    <span class="new-price">$10.00</span>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="item-box"> <!--ITEM 6-->
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                            <div class="item-img">
+                                <button class="open-modal-btn" aria-haspopup="true">More</button>
+                                <img id ="item-img" src="Attachments/Sample-Products/sample6.jpg" alt="">
+                                <button type="button" class="item-add-btn" id="item-add-btn">
+                                    <p>Add to Cart</p>
+                                    <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                                </button>
+                            </div>
+                            <div class="item-details">
+                                <a href="#" class="item-name">Tumeric Tablets</a>
+                                <div class="item-price">
+                                    <span class="new-price">$10.00</span>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="item-box"> <!--ITEM 7-->
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                            <div class="item-img">
+                                <button class="open-modal-btn" aria-haspopup="true">More</button>
+                                <img id ="item-img" src="Attachments/Sample-Products/sample7.jpeg" alt="">
+                                <button type="button" class="item-add-btn" id="item-add-btn">
+                                    <p>Add to Cart</p>
+                                    <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                                </button>
+                            </div>
+                            <div class="item-details">
+                                <a href="#" class="item-name">Tumeric Tablets</a>
+                                <div class="item-price">
+                                    <span class="new-price">$10.00</span>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="item-box"> <!--ITEM 8-->
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                            <div class="item-img">
+                                <button class="open-modal-btn" aria-haspopup="true">More</button>
+                                <img id ="item-img" src="Attachments/Sample-Products/sample8.jpeg" alt="">
+                                <button type="button" class="item-add-btn" id="item-add-btn">
+                                    <p>Add to Cart</p>
+                                    <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                                </button>
+                            </div>
+                            <div class="item-details">
+                                <a href="#" class="item-name">Tumeric Tablets</a>
+                                <div class="item-price">
+                                    <span class="new-price">$10.00</span>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="item-box"> <!--ITEM 9-->
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                            <div class="item-img">
+                                <button class="open-modal-btn" aria-haspopup="true">More</button>
+                                <img id ="item-img" src="Attachments/Sample-Products/sample9.jpeg" alt="">
+                                <button type="button" class="item-add-btn" id="item-add-btn">
+                                    <p>Add to Cart</p>
+                                    <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                                </button>
+                            </div>
+                            <div class="item-details">
+                                <a href="#" class="item-name">Tumeric Tablets</a>
+                                <div class="item-price">
+                                    <span class="new-price">$10.00</span>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="item-box"> <!--ITEM 10-->
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                            <div class="item-img">
+                                <button class="open-modal-btn" aria-haspopup="true">More</button>
+                                <img id ="item-img" src="Attachments/Sample-Products/sample10.jpeg" alt="">
+                                <button type="button" class="item-add-btn" id="item-add-btn">
+                                    <p>Add to Cart</p>
+                                    <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                                </button>
+                            </div>
+                            <div class="item-details">
+                                <a href="#" class="item-name">Tumeric Tablets</a>
+                                <div class="item-price">
+                                    <span class="new-price">$10.00</span>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="item-box"> <!--ITEM 11-->
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                            <div class="item-img">
+                                <button class="open-modal-btn" aria-haspopup="true">More</button>
+                                <img id ="item-img" src="Attachments/Sample-Products/sample11.jpg" alt="">
+                                <button type="button" class="item-add-btn" id="item-add-btn">
+                                    <p>Add to Cart</p>
+                                    <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                                </button>
+                            </div>
+                            <div class="item-details">
+                                <a href="#" class="item-name">Tumeric Tablets</a>
+                                <div class="item-price">
+                                    <span class="new-price">$10.00</span>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="item-box"> <!--ITEM 12-->
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                            <div class="item-img">
+                                <button class="open-modal-btn" aria-haspopup="true">More</button>
+                                <img id ="item-img" src="Attachments/Sample-Products/sample12.jpeg" alt="">
+                                <button type="button" class="item-add-btn" id="item-add-btn">
+                                    <p>Add to Cart</p>
+                                    <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                                </button>
+                            </div>
+                            <div class="item-details">
+                                <a href="#" class="item-name">Tumeric Tablets</a>
+                                <div class="item-price">
+                                    <span class="new-price">$10.00</span>
+                                    <p class="star">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <script>
+            const miniDisplay = document.querySelector('.mini-cart-display');
+            $(".mini-cart-btn").on("click", function(){
+                miniDisplay.classList.toggle('active');
+            });
+            function remove(){
+                this.parentNode.parentNode.style.display = "none";
+                this.parentNode.parentNode.removeChild(this.parentNode);
+            }
+            //delete items in cart
+            var lis = document.querySelectorAll('#mini-cart-item');
+            var button = document.querySelectorAll('#mini-delete');
+
+            for (var i = 0, len = lis.length; i < len; i++) {
+                button[i].addEventListener('click', remove, false);
+            }
+            //add items to cart
+            /*
+                ............
+            */
+            //totaling item prices
+            var sum = 0;
+            for(var i = 0; i < 4; i++)
+            {
+                sum += findCost(i);
+            }
+            function findCost(index)
+            {
+                var quantity = $('.mini-quantity').eq(i).text();
+                var price = $('.mini-price').eq(i).text();
+                price = price.substring(1);
+                return (quantity * price);
+            }
+            $("#mini-total").text("$" + sum.toFixed(2));
+        </script>
+        <script>
+            $('.heart3').click(function(){
+                if($(this).hasClass('active')){
+                    $(this).removeClass('active')
+                } 
+                else {
+                    $(this).addClass('active')
+                }
+            });
+        </script>
+        <script text="text/javascript"> 
+            var data = 0;
+            $(".open-modal-btn").on("click", function(){
+                $(".modal-overlay").addClass("active");
+                $(".category-section").addClass('stop-scrolling');
+                
+            });
+            function closeModal(){
+                data = 0;
+                document.getElementById("quantity").innerText = data;
+                $(".modal-overlay").removeClass("active");
+                $(".category-section").removeClass('stop-scrolling');
+            }
+            $(".modal-close, .modal-overlay, .item-add-btn2").on("click", function(){
+                closeModal();
+            });
+            $(document).keyup(function(e) {
+                if (e.keyCode == 27) {
+                    closeModal();
+                }
+            });
+
+            //make a function that stops whole page from scrolling when anchor tag is clicked within the modal !!!!!!!!!!!!!!!!!!!!!
+
+            document.getElementById("quantity").innerText = data;
+            function decrement(){
+                data = data - 1;
+                if(data > 0)
+                {
+                    document.getElementById("quantity").innerText = data;
+                }
+                if(data < 0)
+                {
+                    data = 0;
+                    document.getElementById("quantity").innerText = data;
+                }
+            }
+            function increment(){
+                data = data + 1;
+                document.getElementById("quantity").innerText = data;
+                document.getElementById("quantity").dataset = data;
+
+            }
+            $(".q-btn1").on("click", function(){
+                decrement();
+            });
+            $(".q-btn2").on("click", function(){
+                increment();
+            });
+        </script>
+        <script>
+            const btn = document.querySelector(".post-btn");
+            const post = document.querySelector(".post");
+            const widget = document.querySelector(".star-widget");
+            const editBtn = document.querySelector(".edit");
+            const Rform = document.querySelector(".actual-form");
+            const r1 = document.querySelector(".rate-1");
+            const r2 = document.querySelector(".rate-2");
+            const r3 = document.querySelector(".rate-3");
+            const r4 = document.querySelector(".rate-4");
+            const r5 = document.querySelector(".rate-5");
+
+            $(".post-btn").on("click", function(){
+                widget.style.display = "none";
+                post.style.display = "block";
+                Rform.style.display = "none";
+
+                createReviewBox();
+
+                editBtn.onclick = ()=>{
+                    widget.style.display = "block";
+                    post.style.display = "none";
+                    Rform.style.display = "block";
+                }
+                return false;
+            });
+            var stars = 0;
+            function checkStars(){
+                if(document.getElementById('rate-5').checked) 
+                {
+                    stars = 5;
+                }
+                else if(document.getElementById('rate-4').checked)  
+                {
+                    stars = 4
+                }
+                else if(document.getElementById('rate-3').checked)  
+                {
+                    stars = 3
+                }
+                else if(document.getElementById('rate-2').checked)  
+                {
+                    stars = 2
+                }
+                else if(document.getElementById('rate-1').checked)  
+                {
+                    stars = 1
+                }
+                return stars;
+            }
+            function createReviewBox() {
+                var first = document.createElement("div");
+                first.className = "review-box";
+
+                var second = document.createElement("div");
+                second.className = "user-review-text";
+
+                var third = document.createElement("div");
+                third.className = "users-name";
+
+                var fourth = document.createElement("div");
+                fourth.className = "user-profile-img";
+
+                var fifth = document.createElement("div");
+                fifth.className = "star-rating";
+                var star1 = document.createElement("i"); 
+                var star2 = document.createElement("i"); 
+                var star3 = document.createElement("i"); 
+                var star4 = document.createElement("i"); 
+                var star5 = document.createElement("i");
+                star1.className = "fa fa-star";
+                star2.className = "fa fa-star";
+                star3.className = "fa fa-star";
+                star4.className = "fa fa-star";
+                star5.className = "fa fa-star";
+                var star6 = document.createElement("i"); 
+                var star7 = document.createElement("i"); 
+                var star8 = document.createElement("i"); 
+                var star9 = document.createElement("i"); 
+                var star10 = document.createElement("i");
+                star6.className = "fa fa-star-o";
+                star7.className = "fa fa-star-o";
+                star8.className = "fa fa-star-o";
+                star9.className = "fa fa-star-o";
+
+                var str = document.getElementById("review-user-text").value;
+                var input = str;
+                input.className = "user-review-text";
+                input = document.createTextNode(input);
+
+                var str2 = document.getElementById("review-users-name").value;
+                var input2 = str2;
+                input2.className = "users-name";
+                input2 = document.createTextNode(input2);
+
+                var input3 = document.getElementsByClassName("user-profile-img").src;
+                var s5 = document.getElementById("rate-5").checked; 
+                var s4 = document.getElementById("rate-4").checked; 
+                var s3 = document.getElementById("rate-3").checked; 
+                var s2 = document.getElementById("rate-2").checked; 
+                var s1 = document.getElementById("rate-1").checked; 
+                if(s5)
+                {
+                    fifth.append(star1);
+                    fifth.append(star2);
+                    fifth.append(star3);
+                    fifth.append(star4);
+                    fifth.append(star5);
+                }
+                else if(s4)
+                {
+                    fifth.append(star1);
+                    fifth.append(star2);
+                    fifth.append(star3);
+                    fifth.append(star4);
+                    fifth.append(star6);
+                }
+                else if(s3)
+                {
+                    fifth.append(star1);
+                    fifth.append(star2);
+                    fifth.append(star3);
+                    fifth.append(star6);
+                    fifth.append(star7);
+                }
+                else if(s2)
+                {
+                    fifth.append(star1);
+                    fifth.append(star2);
+                    fifth.append(star6);
+                    fifth.append(star7);
+                    fifth.append(star8);
+                }
+                else if(s1)
+                {
+                    fifth.append(star1);
+                    fifth.append(star6);
+                    fifth.append(star7);
+                    fifth.append(star8);
+                    fifth.append(star9);
+                }
+
+
+                second.appendChild(input);
+                third.appendChild(input2);
+
+                first.appendChild(fourth);
+                first.appendChild(fifth);
+                first.appendChild(third);
+                first.appendChild(second);
+
+                document.querySelector(".product-reviews-container").appendChild(first);
+            }
+            function addMiniCart(){
+                var first = document.createElement("li");
+                first.setAttribute('id','mini-cart-item');
+
+                var second = document.createElement("div");
+                second.className = "mini-cart-box";
+
+                var third = document.createElement("h3");
+                third.className = "mini-cart-item-name";
+
+                var fourth = document.createElement("span");
+                fourth.className = "mini-quantity";
+
+                var fifth = document.createElement("span");
+                fifth.className = "mini-multiply";
+
+                var sixth = document.createElement("span");
+                sixth.className = "mini-price";
+
+                var str = document.getElementById("modal-product-name").value;
+                var input = str;
+                input.className = "mini-cart-item-name";
+                input = document.createTextNode(input);
+
+                var str2 = document.getElementById("quantity").dataset.value;
+                var input2 = str2;
+                input2.className = "mini-quantity";
+                input2 = document.createTextNode(input2);
+
+                var str3 = document.getElementById("x-symbol").value;
+                var input3 = str3;
+                input3.className = "mini-multiply";
+                input3 = document.createTextNode(input3);
+
+                var str4 = document.getElementById("item-price2").value;
+                var input4 = str4;
+                input4.className = "mini-price";
+                input4 = document.createTextNode(input4);
+
+                var input5 = document.getElementsByClassName("user-profile-img").src;
+
+                third.appendChild(input);
+                fourth.appendChild(input2);
+                fifth.appendChild(input3);
+                sixth.appendChild(input4);
+
+                second.appendChild(fourth);
+                second.appendChild(fifth);
+                second.appendChild(third);
+                second.appendChild(second);
+
+                first.appendChild(second);
+
+                document.querySelector(".mini-cart-display").appendChild(first);
+            }
+          </script>
+  </body>
+</html>

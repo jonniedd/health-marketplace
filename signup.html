@@ -5,6 +5,7 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>Health Dispensary E-Shop</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script> src="https://kit.fontaesome.com/a076d05399.js"</script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -212,33 +213,72 @@
             </ul>
          </div>
      </nav>
-    <!--about section starts here-->
-    <section class="about" id="about">
-        <img src="Attachments/GIFS/health.gif" class = "health-heart">
-        <div class="overlay3"></div>
-        <div class="about-title">
-            <h1>Learn About Us</h1>
-            <div class="about-sub-title">
-                <h2>&<span> Our Goals in<span> Digital Health</span></span></h2>
-            </div>
+     <!--login section starts here-->
+    <section class="signup" id="signup">
+        <div class="overlay8"></div>
+        <div class="center">
+            <h1>Sign Up <span class="fa fa-user-circle-o" style="font-size:60px"></span></h1>
+            <form method="post">
+                <div class="text-field" id="first-name">
+                    <input type="text" required>
+                    <span></span>
+                    <label>First Name&nbsp;&nbsp;<p class="fa fa-id-card" style="font-size:12px"></p></label>
+                </div>
+                <div class="text-field" id="last-name">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Last Name&nbsp;&nbsp;<p class="fa fa-id-card" style="font-size:12px"></p></label>
+                </div>
+                <div class="text-field" id="email">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Email&nbsp;&nbsp;<p class="fa fa-envelope" style="font-size:12px"></p></label>
+                </div>
+                <div class="text-field" id="phone-num">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Phone Number&nbsp;&nbsp;<p class="fa fa-phone" style="font-size:12px"></p></label>
+                </div>
+                <div class="text-field" id="street-address">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Street Address&nbsp;<p class="fa fa-home" style="font-size:14px"></p></label>
+                </div>
+                <div class="text-field" id="city">
+                    <input type="text" required>
+                    <span></span>
+                    <label>City&nbsp;&nbsp;<p class="fas fa-city" style="font-size:10px"></p></label>
+                </div>
+                <div class="text-field" id="state">
+                    <input type="text" required>
+                    <span></span>
+                    <label>State&nbsp;&nbsp;<p class="fas fa-map-marker-alt" style="font-size:12px"></p></label>
+                </div>
+                <div class="text-field" id="zip-code">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Postal/Zip-Code&nbsp;&nbsp;<p class="fas fa-map-pin" style="font-size:12px"></p></label>
+                </div>
+                <div class="text-field" id="password">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Password&nbsp;&nbsp;<p class="fa fa-key" style="font-size:12px"></p></label>
+                </div>
+                <div class="text-field" id="confirm-password">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Confirm Password&nbsp;&nbsp;<p class="fa fa-check-circle" style="font-size:12px"></p></label>
+                </div>
+                <div class="forgot-pass">Need Help?</div>
+                <input type="submit" value="CREATE ACCOUNT">
+                <div class="sign-up">
+                    Already a member? <a href="login.html">Sign In!</a>
+                </div>
+            </form>
         </div>
-        <div class="about-info">
-            <p class="first-box">
-                <span>Who are we?</span> <br>
-                 rerum id sapiente omnis laboriosam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. A consequatur accusantium, quo asperiores explicabo quisquam iusto ipsa culpa sint molestiae sed doloremque porro tempore voluptatum rerum id sapiente omnis laboriosam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. A consequatur accusantium, quo asperiores explicabo quisquam iusto ipsa culpa sint molestiae sed doloremque porro tempore voluptatum rerum id sapiente omnis laboriosam.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A consequatur accusantium, quo.
-            </p>
-            <p class="second-box">
-                <span>What's our goal?</span> <br>
-                 rerum id sapiente omnis laboriosam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. A consequatur accusantium, quo asperiores explicabo quisquam iusto ipsa culpa sint molestiae sed doloremque porro tempore voluptatum rerum id sapiente omnis laboriosam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. A consequatur accusantium, quo asperiores explicabo quisquam iusto ipsa culpa sint molestiae sed doloremque porro tempore voluptatum rerum id sapiente omnis laboriosam.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A consequatur accusantium, quo.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quod suscipit eaque tempora architecto reiciendis non quisquam nesciunt aliquid, nisi ex. Ipsa modi, dolorem veniam porro quia nihil reprehenderit alias. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-        </div>
-        <img src="Attachments/GIFS/medpackage.gif" class = "med-box">
+        <video autoplay loop muted><source src="Attachments/Backgrounds/vid1.mp4" type="video/mp4"></video>
     </section>
     <script>
-        //
         let dropdownBtn1 = document.querySelector('.dep1-btn');
         let menuContent1 = document.querySelector('.subpages-1');
         var arrowIcon = document.getElementById("angle");
