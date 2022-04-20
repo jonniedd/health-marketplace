@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Shopping Cart </title>
+    <link rel="stylesheet" href="cartstyle.css">
+</head>
+<body>
+    <section class="menu">
+        <a onclick="return false" class="shopBtn">Shopping</a>
+        <a onclick="return false" class="cartBtn">view cart</a>
+    </section>
+
+    <section class="shop">
+        <div class="item-container">
+
+        </div>
+    </section>
+
+    <section class="cart">
+        <table>
+           <thead class="thead">
+               <tr>
+                    <th colspan='2'>Item</th>
+                    <th>Price</th>
+                    <th colspan='2'>Quantity</th>
+               </tr>
+           </thead> 
+           <tbody class="tbody">
+               <tr class="totalRow">
+                   <td colespan="5">Total:  $0.00</td>
+               </tr>
+           </tbody>
+        </table>
+        <button class="btn checkout-btn">Checkout</button>
+    </section>
+
+<script src="cartscript.js" defer></script>
+</body>
+</html>
