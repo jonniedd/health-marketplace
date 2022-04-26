@@ -583,7 +583,7 @@
       /* Images default to Center Center. Maybe try 'center top'? */
       background-position: center center;
       display: block;
-      object-fit: cover;
+      object-fit: fit;
       /* height: 100vh; *//* If you want fullscreen */
       position: relative;
       margin-top: -278px;
