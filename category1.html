@@ -1,0 +1,1820 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Health Dispensary E-Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script> src="https://kit.fontaesome.com/a076d05399.js"</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+</head>          
+<body>
+    <nav class="navbar2">
+        <div class="max-width">
+             <div class="logo"><a href="home.html"><img src="Attachments/Logo/logo.png"></a></div>
+             <div class="search">
+                <form action="" method ="" class="search-bar">
+                    <input type="text" id="search-input"  placeholder="Browse Items   .   .   ." >
+                    <button type="button" id="search-btn"><img src="Attachments/Icons/searchicon.png"></button>
+                </form>
+            </div>
+             <ul class="menu">
+                 <div class="border-box">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li> 
+                    <li><a href="about.html">About Us</a></li> 
+                    <li><a href="home.html">Blogs</a></li> 
+                    <li><a href="home.html">Bookmarks</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a id="cart-btn" href="home.html"><span class="fa fa-shopping-cart" style="font-size:22px"></span></a></li> 
+                    <li><a href="login.html"><span class="fa fa-user-circle-o" style="font-size:20px"></span></a></li> 
+                 </div>
+             </ul>
+        </div>
+     </nav>
+     <nav class="sub-navbar">
+        <div class="max-width">
+             <ul class="menu"> 
+                 <div class="border-box">
+                     <!-- <li><a href="#"><span id="bars-btn" class="fa fa-bars" style="font-size:15px"></span></a></li> 
+                    <button onclick="myFunction()" class="bars"><span class="fa fa-bars" style="font-size:15px"></span></button>
+                    -->
+                    <li><a href="#" class="bars"><span class="fa fa-bars" style="font-size:15px"></span></a></li> 
+                    <li><a href="category1.html">Natural Medicine</a></li>
+                    <li><a href="#prescription">Prescription Medication</a></li>
+                    <li><a href="#supplement">Supplements</a></li>
+                    <li><a href="#coughncold">Cough & Cold</a></li>
+                    <li><a href="#painreliever">Pain Relievers</a></li>
+                    <li><a href="#allergy">Allergies</a></li>
+                    <li><a href="#firstaid">First-Aid</a></li>
+                    <li><a href="#skincare">Skin Care</a></li>
+                    <li><a href="#haircare">Hair Care</a></li>
+                    <li><a href="#eyecare">Eye Care</a></li>
+                    <li><a href="#footcare">Foot Care</a></li>
+                    <li><a href="#feminine">Feminine Care</a></li>
+                 </div>
+             </ul>
+        </div> 
+     </nav>
+     <nav class="sidebar">
+         <div class="sidebar-content">
+            <div class="text">
+                <span>Browse Below</span>
+                <p id = "shoppingbag" class="fa fa-shopping-bag" aria-hidden="true"></p>
+                <i id="close" class="fa fa-close"></i>
+           </div>
+            <ul>
+               <li>
+                   <a href="#" class="dep1-btn">Natural Medicine
+                       <span id="angle" class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-1">
+                       <li><a href="#">Ayurveda</a></li>
+                       <li><a href="#">Homeopathy</a></li>
+                       <li><a href="#">Aromatherapy</a></li>
+                       <li><a href="#">Herbal Medicine</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep2-btn">Prescription Medication
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-2">
+                       <li><a href="#">Track your Prescription & Refills</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep3-btn">Supplements
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-3">
+                       <li><a href="#">Vitamins and Minerals</a></li>
+                       <li><a href="#">Herbals and Botanicals</a></li>
+                       <li><a href="#">Specialty Supplements</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep4-btn">Cough & Cold
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-4">
+                       <li><a href="#">Nasal Decongestants</a></li>
+                       <li><a href="#">Cough Suppressants</a></li>
+                       <li><a href="#">Expectorants</a></li>
+                       <li><a href="#">Antihistamines</a></li>
+                       <li><a href="#">Pain Relievers</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep5-btn">Pain Relievers
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-5">
+                       <li><a href="#">Acetaminophen</a></li>
+                       <li><a href="#">Nonsteroidal Anti-Inflammatory (NSAID)</a></li>
+                       <li><a href="#">Combo (Acetaminophen & NSAID)</a></li>
+                       <li><a href="#">Topical Pain Relievers</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep6-btn">Allergies
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-6">
+                       <li><a href="#">Pills and Liquids</a></li>
+                       <li><a href="#">Nasal Sprays</a></li>
+                       <li><a href="#">Eyedrops</a></li>
+                       <li><a href="#">Topical Allergy Relief</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep7-btn">First-Aid
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-7">
+                       <li><a href="#">Kits</a></li>
+                       <li><a href="#">Bandages</a></li>
+                       <li><a href="#">Dressings & Gauze</a></li>
+                       <li><a href="#">Tapes</a></li>
+                       <li><a href="#">Sponges</a></li>
+                       <li><a href="#">Wound Cleansers</a></li>
+                       <li><a href="#">Wound Care</a></li>
+                   </ul>
+               </li>
+               <li>
+                    <a href="#" class="dep8-btn">Skin Care
+                        <span class="fa fa-angle-right first"></span>
+                    </a>
+                    <ul class="subpages-8">
+                        <li><a href="#">Lotions & Moisturizers</a></li>
+                        <li><a href="#">Cleansers</a></li>
+                        <li><a href="#">Face Masks & Treatments</a></li>
+                        <li><a href="#">Polishes & Scrubs</a></li>
+                        <li><a href="#">Toners & Astringents</a></li>
+                        <li><a href="#">Sunscreens & Tanning Oils</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dep9-btn">Hair Care
+                        <span class="fa fa-angle-right first"></span>
+                    </a>
+                    <ul class="subpages-9">
+                        <li><a href="#">Scalp Treatments</a></li>
+                        <li><a href="#">Hair Masks</a></li>
+                        <li><a href="#">Treatment Oils</a></li>
+                        <li><a href="#">Shampoo & Conditioners</a></li>
+                        <li><a href="#">Styling Products</a></li>
+                        <li><a href="#">Hair Loss Products</a></li>
+                    </ul>
+                </li>
+               <li>
+                   <a href="#" class="dep10-btn">Eye Care
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-10">
+                       <li><a href="#">Contact Lense Care</a></li>
+                       <li><a href="#">Eye Drops & Eye Lubricants</a></li>
+                       <li><a href="#">Eye Washes</a></li>
+                       <li><a href="#">Topical Eye Treatments</a></li>
+                       <li><a href="#">Order Contacts</a></li>
+                   </ul>
+               </li>
+               <li>
+                <a href="#" class="dep11-btn">Foot Care
+                    <span class="fa fa-angle-right first"></span>
+                </a>
+                <ul class="subpages-11">
+                    <li><a href="#">Foot Creams & Treatments</a></li>
+                    <li><a href="#">Foot & Leg Massagers</a></li>
+                    <li><a href="#">Diabetic Foot Care</a></li>
+                    <li><a href="#">Athlete's Foot & Antifungal</a></li>
+                    <li><a href="#">Foot Odor Control</a></li>
+                    <li><a href="#">Corns, Calluses, Blisters & Bunions Relief</a></li>
+                </ul>
+            </li>
+               <li>
+                   <a href="#" class="dep12-btn">Feminine Care
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-12">
+                       <li><a href="#">Pads</a></li>
+                       <li><a href="#">Pantiliners</a></li>
+                       <li><a href="#">Tampons</a></li>
+                       <li><a href="#">Menstrual Cups</a></li>
+                       <li><a href="#">Menstrual Pain Relief</a></li>
+                       <li><a href="#">Bladder Health</a></li>
+                       <li><a href="#">Yeast Infections</a></li>
+                       <li><a href="#">Menopause Relief</a></li>
+                   </ul>
+               </li>
+            </ul>
+         </div>
+     </nav>
+  <body>
+    <section class="category-section" id="category-section">
+        <div class="cat-overlay"></div> 
+      <!--Indicator-->
+        <section class="indicator">
+                <div class="indicator-inner">
+                    <div class="indicator-text">
+                        <p>Home / Natural Medicine</p>
+                    </div>
+                </div>
+            </section>
+        <!---Side bar-->
+            <div class="category-container">
+                    <aside class="side-filter">
+                        <div class="side-title">
+                            <h3>Natural Medicine</h3>
+                        </div>
+                        <div class="side-content">
+                            <ul class="product-filter">
+                                <li class= "list product-filter-active" data-filter="all">All</li>
+                                <li class= "list" data-filter="Ayurveda">Ayurveda</li>
+                                <li class= "list" data-filter="Homeopathy">Homeopathy</li>
+                                <li class= "list" data-filter="Aromatherapy">Aromatherapy</li>
+                                <li class= "list" data-filter="Herbal">Herbal Medicine</li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <div class="cart">
+                        <div class="cart__items_container">
+                            <div class="cart__items">
+                                <div class="check_out"><h4>Total: $</h4><h4 class="total__cost">0</h4></div>
+                                <button class="btn check_out_btn">Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Cart-Mini-Display
+                    <div class="mini-cart-display">
+                        <div class="mini-list">
+                            <ul class="mini-cart-product" id="mini-cart-product">
+                                <li id="mini-cart-item">
+                                    <div class="mini-cart-box">
+                                        <i id="mini-delete" class="fa fa-times"></i>
+                                        <img id="mini-img" src="Attachments/Sample-Products/sample1.jpeg" alt="">
+                                        <div class="mini-cart-content">
+                                            <h3 class="mini-cart-item-name" >Item 1</h3>
+                                            <span class="mini-quantity">4</span>
+                                            <span id="x-symbol" class="mini-multiply">x</span>
+                                            <span class="mini-price">$10.20</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li id="mini-cart-item">
+                                    <div class="mini-cart-box">
+                                        <i id="mini-delete" class="fa fa-times"></i>
+                                        <img id="mini-img" src="Attachments/Sample-Products/sample4.jpeg" alt="">
+                                        <div class="mini-cart-content">
+                                            <h3 class="mini-cart-item-name" >Item 1</h3>
+                                            <span class="mini-quantity">2</span>
+                                            <span id="x-symbol" class="mini-multiply">x</span>
+                                            <span class="mini-price">$20.50</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="mini-total">Total: <span id="mini-total"></span></h3>
+                        <a href="" class="mini-checkout-btn" >Checkout Cart</a>
+                    </div>
+                    -->
+                </div>
+                <div class="modal-overlay" role="dialog"></div>
+                    <div id="modal1" class="modal" role="alert">
+                        <button class="modal-close" role="button">X</button>
+                        <div class="modal-content" id="modal-content">
+                            <h1 class="modal-name">Tumeric Tablets</h1>
+                            <img class="modal-img" id ="item-img2" src="Attachments/Sample-Products/sample1.jpeg" alt="">
+                            <p class="star2">
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                            </p> 
+                            <span class="modal-price" id="item-price2">$20.00</span>
+                            <div class="modal-description" id="product-reviews-section">
+                                <p>Item Description:<br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, est. Aspernatur, aut. Aliquam, laudantium libero hic impedit at placeat, ad iusto ex accusamus quod unde corrupti similique beatae eaque eligendi.</p>
+                            </div>
+                            <div class="modal-ingredients">
+                                <p>Item Ingredients:<br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, est. Aspernatur, aut. Aliquam, laudantium libero hic impedit at placeat, ad iusto ex accusamus quod unde corrupti similique beatae eaque eligendi.</p>
+                            </div>
+                            <button type="button" onclick="addMiniCart(modal-content)" class="item-add-btn2" id="item-add-btn2">
+                                <p>Add to Cart</p>
+                            </button>
+                            <span id="q-label">quantity</span>
+                            <div class="quantity-btn">
+                                <button class="q-btn1" id="q-btns" type="decrement()">-</button>
+                                    <h2 data-count="0" id="quantity"></h2>
+                                <button class="q-btn2" id="q-btns" type="increment()">+</button>
+                            </div>
+                            <a id="scroll-to-reviews" href="#product-reviews-section">
+                                <span id="reviews-label"><p id="r-quantity">0</p>&nbsp;Reviews</span>
+                            </a>
+                            <div class="review-form-title">
+                                <span>Write a Review</span>
+                            </div>
+                            <div class="review-form">
+                                <div class="review-form-container">
+                                    <div class="post">
+                                      <div class="text">Thanks for rating us!</div>
+                                      <div class="edit">WRITE MORE</div>
+                                    </div>
+                                    <div class="star-widget">
+                                      <input type="radio" name="rate" id="rate-5">
+                                      <label for="rate-5" class="fas fa-star"></label>
+                                      <input type="radio" name="rate" id="rate-4">
+                                      <label for="rate-4" class="fas fa-star"></label>
+                                      <input type="radio" name="rate" id="rate-3">
+                                      <label for="rate-3" class="fas fa-star"></label>
+                                      <input type="radio" name="rate" id="rate-2">
+                                      <label for="rate-2" class="fas fa-star"></label>
+                                      <input type="radio" name="rate" id="rate-1">
+                                      <label for="rate-1" class="fas fa-star"></label>
+                                      <form class="actual-form" action="#">
+                                        <header></header>
+                                        <div class="review-users-name">
+                                            <textarea id="review-users-name" cols="30" placeholder="Your Name"></textarea>
+                                          </div>
+                                        <div class="review-user-text">
+                                          <textarea id="review-user-text" cols="30" placeholder="Describe your experience.."></textarea>
+                                        </div>
+                                        <div id="post-btn" class="post-btn">
+                                          <button onclick="createReview()" type="submit">Post</button>
+                                        </div>
+                                      </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-reviews">
+                                <section class="product-reviews-section">
+                                    <!--heading--->
+                                    <div class="product-reviews-title">
+                                        <span>Reviews</span>
+                                    </div>
+                                    <!--testimonials-box-container------>
+                                    <div class="product-reviews-container">
+                                        <!--BOX-1-------------->
+                                        <div class="review-box" id="tester-review-box">
+                                            <!--top------------------------->
+                                            <div class="review-box-top">
+                                                <!--profile----->
+                                                <div class="user-profile">
+                                                    <!--img---->
+                                                    <div class="user-profile-img">
+                                                        <img src="https://cdn3.iconfinder.com/data/icons/avatars-15/64/_Ninja-2-512.png"/>
+                                                    </div>
+                                                    <!--name-and-username-->
+                                                    <div class="users-name">
+                                                        <strong id="u-name" >Sarah Jacobs</strong>
+                                                        <span id="u-date">Date Created: 4/1/2022</span>
+                                                    </div>
+                                                </div>
+                                                <!--reviews------>
+                                                <div class="star-rating">
+                                                    <i id="star1" class="fa fa-star"></i>
+                                                    <i id="star2" class="fa fa-star"></i>
+                                                    <i id="star3" class="fa fa-star"></i>
+                                                    <i id="star4" class="fa fa-star"></i>
+                                                    <i id="star5" class="fa fa-star-o"></i><!--Empty star-->
+                                                </div>
+                                            </div>
+                                            <!--Comments---------------------------------------->
+                                            <div id="user-review-text" class="user-review-text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                  </section>
+                            </div>
+                        </div>
+                     </div>
+            <!---Product List-->
+            <div class="product-grid-wrapper">
+                <div class="product-grid-container">
+                    <div class="display-style-btns">
+                        <button type="submit" data-inline="true" id="details-active-btn" class="mini-cart-btn">
+                            <i class="fa fa-shopping-cart" style="font-size: 18px;"></i>
+                        </button>
+                        <button type="button" onclick="GridSearch()" data-inline="true" id="grid-active-btn" class="grid-active-btn">
+                            <i class="fa fa-th" style="font-size: 18px;"></i>
+                        </button>
+                        <button type="button" data-inline="true" id="details-active-btn" class="details-active-btn">
+                            <i class="fa fa-list" style="font-size: 18px;"></i>
+                        </button>
+                    </div>
+                    <div id="item-list2" class="item-list2">
+                        <ul class="product-elemnts-list">
+                            <li>
+                                <div class="product__element2 Ayurveda">
+                                    <div class="wishlist-btn3">
+                                        <button id="heart-btn3" class="heart3"></button>
+                                    </div>
+                                  <input type="hidden" name="" id="product__id2" value="1" />
+                                  <button id = "open-modal-btn2" class="open-modal-btn2" aria-haspopup="true">More</button>
+                                  <img src="Attachments/Sample-Products/sample1.jpeg" alt="" srcset="" id="product-image2" />
+                                  <h4 class="product__name2">Tumeric Tablets</h4>
+                                  <h5 class="product__price2">$10.00</h5>
+                                    <p class="star-list">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                    <div class="list-description">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam maiores quibusdam non? Magni similique vel dolor omnis fugit recusandae accusantium voluptas id, cum debitis quos dolore asperiores, molestias odio autem?</p>
+                                    </div>
+                                  <div class="btn__add__to__cart2">
+                                      <p>Add To Cart
+                                        <div class="bag2" id="bag2"><img src="Attachments/GIFS/shoppingbag2.gif"></div>
+                                      </p>
+                                    </div>
+                                    <div class="item-description2">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product__element2 Ayurveda">
+                                    <div class="wishlist-btn3">
+                                        <button id="heart-btn3" class="heart3"></button>
+                                    </div>
+                                  <input type="hidden" name="" id="product__id2" value="2" />
+                                  <button id = "open-modal-btn2" class="open-modal-btn2" aria-haspopup="true">More</button>
+                                  <img src="Attachments/Sample-Products/sample2.jpeg" alt="" srcset="" id="product-image2" />
+                                  <h4 class="product__name2">Ginger Tablets</h4>
+                                  <h5 class="product__price2">$10.00</h5>
+                                    <p class="star-list">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                    <div class="list-description">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam maiores quibusdam non? Magni similique vel dolor omnis fugit recusandae accusantium voluptas id, cum debitis quos dolore asperiores, molestias odio autem?</p>
+                                    </div>
+                                  <div class="btn__add__to__cart2">
+                                      <p>Add To Cart
+                                        <div class="bag2" id="bag2"><img src="Attachments/GIFS/shoppingbag2.gif"></div>
+                                      </p>
+                                    </div>
+                                    <div class="item-description2">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product__element2 Homeopathy">
+                                    <div class="wishlist-btn3">
+                                        <button id="heart-btn3" class="heart3"></button>
+                                    </div>
+                                  <input type="hidden" name="" id="product__id2" value="3" />
+                                  <button id = "open-modal-btn2" class="open-modal-btn2" aria-haspopup="true">More</button>
+                                  <img src="Attachments/Sample-Products/sample3.jpeg" alt="" srcset="" id="product-image2" />
+                                  <h4 class="product__name2">Neem Paste</h4>
+                                  <h5 class="product__price2">$15.99</h5>
+                                    <p class="star-list">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                    <div class="list-description">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam maiores quibusdam non? Magni similique vel dolor omnis fugit recusandae accusantium voluptas id, cum debitis quos dolore asperiores, molestias odio autem?</p>
+                                    </div>
+                                  <div class="btn__add__to__cart2">
+                                      <p>Add To Cart
+                                        <div class="bag2" id="bag2"><img src="Attachments/GIFS/shoppingbag2.gif"></div>
+                                      </p>
+                                    </div>
+                                    <div class="item-description2">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product__element2 Aromatherapy">
+                                    <div class="wishlist-btn3">
+                                        <button id="heart-btn3" class="heart3"></button>
+                                    </div>
+                                  <input type="hidden" name="" id="product__id2" value="4" />
+                                  <button id = "open-modal-btn2" class="open-modal-btn2" aria-haspopup="true">More</button>
+                                  <img src="Attachments/Sample-Products/sample4.jpeg" alt="" srcset="" id="product-image2" />
+                                  <h4 class="product__name2">Lavendar Essential Oil</h4>
+                                  <h5 class="product__price2">$8.99</h5>
+                                    <p class="star-list">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                    <div class="list-description">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam maiores quibusdam non? Magni similique vel dolor omnis fugit recusandae accusantium voluptas id, cum debitis quos dolore asperiores, molestias odio autem?</p>
+                                    </div>
+                                  <div class="btn__add__to__cart2">
+                                      <p>Add To Cart
+                                        <div class="bag2" id="bag2"><img src="Attachments/GIFS/shoppingbag2.gif"></div>
+                                      </p>
+                                    </div>
+                                    <div class="item-description2">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product__element2 Aromatherapy">
+                                    <div class="wishlist-btn3">
+                                        <button id="heart-btn3" class="heart3"></button>
+                                    </div>
+                                  <input type="hidden" name="" id="product__id2" value="5" />
+                                  <button id = "open-modal-btn2" class="open-modal-btn2" aria-haspopup="true">More</button>
+                                  <img src="Attachments/Sample-Products/sample5.jpeg" alt="" srcset="" id="product-image2" />
+                                  <h4 class="product__name2">Eucalyptus Essential Oil</h4>
+                                  <h5 class="product__price2">$8.99</h5>
+                                    <p class="star-list">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                    <div class="list-description">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam maiores quibusdam non? Magni similique vel dolor omnis fugit recusandae accusantium voluptas id, cum debitis quos dolore asperiores, molestias odio autem?</p>
+                                    </div>
+                                  <div class="btn__add__to__cart2">
+                                      <p>Add To Cart
+                                        <div class="bag2" id="bag2"><img src="Attachments/GIFS/shoppingbag2.gif"></div>
+                                      </p>
+                                    </div>
+                                    <div class="item-description2">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product__element2 Aromatherapy">
+                                    <div class="wishlist-btn3">
+                                        <button id="heart-btn3" class="heart3"></button>
+                                    </div>
+                                  <input type="hidden" name="" id="product__id2" value="6" />
+                                  <button id = "open-modal-btn2" class="open-modal-btn2" aria-haspopup="true">More</button>
+                                  <img src="Attachments/Sample-Products/sample6.jpg" alt="" srcset="" id="product-image2" />
+                                  <h4 class="product__name2">Peppermint Essential Oil</h4>
+                                  <h5 class="product__price2">$8.99</h5>
+                                    <p class="star-list">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                    <div class="list-description">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam maiores quibusdam non? Magni similique vel dolor omnis fugit recusandae accusantium voluptas id, cum debitis quos dolore asperiores, molestias odio autem?</p>
+                                    </div>
+                                  <div class="btn__add__to__cart2">
+                                      <p>Add To Cart
+                                        <div class="bag2" id="bag2"><img src="Attachments/GIFS/shoppingbag2.gif"></div>
+                                      </p>
+                                    </div>
+                                    <div class="item-description2">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product__element2 Aromatherapy">
+                                    <div class="wishlist-btn3">
+                                        <button id="heart-btn3" class="heart3"></button>
+                                    </div>
+                                  <input type="hidden" name="" id="product__id2" value="7" />
+                                  <button id = "open-modal-btn2" class="open-modal-btn2" aria-haspopup="true">More</button>
+                                  <img src="Attachments/Sample-Products/sample7.jpeg" alt="" srcset="" id="product-image2" />
+                                  <h4 class="product__name2">Lemon Essential Oil</h4>
+                                  <h5 class="product__price2">$8.99</h5>
+                                    <p class="star-list">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                    <div class="list-description">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam maiores quibusdam non? Magni similique vel dolor omnis fugit recusandae accusantium voluptas id, cum debitis quos dolore asperiores, molestias odio autem?</p>
+                                    </div>
+                                  <div class="btn__add__to__cart2">
+                                      <p>Add To Cart
+                                        <div class="bag2" id="bag2"><img src="Attachments/GIFS/shoppingbag2.gif"></div>
+                                      </p>
+                                    </div>
+                                    <div class="item-description2">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product__element2 Aromatherapy">
+                                    <div class="wishlist-btn3">
+                                        <button id="heart-btn3" class="heart3"></button>
+                                    </div>
+                                  <input type="hidden" name="" id="product__id2" value="8" />
+                                  <button id = "open-modal-btn2" class="open-modal-btn2" aria-haspopup="true">More</button>
+                                  <img src="Attachments/Sample-Products/sample8.jpeg" alt="" srcset="" id="product-image2" />
+                                  <h4 class="product__name2">Rosemary Essential Oil</h4>
+                                  <h5 class="product__price2">$8.99</h5>
+                                    <p class="star-list">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                    <div class="list-description">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam maiores quibusdam non? Magni similique vel dolor omnis fugit recusandae accusantium voluptas id, cum debitis quos dolore asperiores, molestias odio autem?</p>
+                                    </div>
+                                  <div class="btn__add__to__cart2">
+                                      <p>Add To Cart
+                                        <div class="bag2" id="bag2"><img src="Attachments/GIFS/shoppingbag2.gif"></div>
+                                      </p>
+                                    </div>
+                                    <div class="item-description2">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product__element2 Herbal">
+                                    <div class="wishlist-btn3">
+                                        <button id="heart-btn3" class="heart3"></button>
+                                    </div>
+                                  <input type="hidden" name="" id="product__id2" value="9" />
+                                  <button id = "open-modal-btn2" class="open-modal-btn2" aria-haspopup="true">More</button>
+                                  <img src="Attachments/Sample-Products/sample9.jpeg" alt="" srcset="" id="product-image2" />
+                                  <h4 class="product__name2">Peppermint Tea</h4>
+                                  <h5 class="product__price2">$12.99</h5>
+                                    <p class="star-list">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                    <div class="list-description">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam maiores quibusdam non? Magni similique vel dolor omnis fugit recusandae accusantium voluptas id, cum debitis quos dolore asperiores, molestias odio autem?</p>
+                                    </div>
+                                  <div class="btn__add__to__cart2">
+                                      <p>Add To Cart
+                                        <div class="bag2" id="bag2"><img src="Attachments/GIFS/shoppingbag2.gif"></div>
+                                      </p>
+                                    </div>
+                                    <div class="item-description2">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product__element2 Herbal">
+                                    <div class="wishlist-btn3">
+                                        <button id="heart-btn3" class="heart3"></button>
+                                    </div>
+                                  <input type="hidden" name="" id="product__id2" value="10" />
+                                  <button id = "open-modal-btn2" class="open-modal-btn2" aria-haspopup="true">More</button>
+                                  <img src="Attachments/Sample-Products/sample10.jpeg" alt="" srcset="" id="product-image2" />
+                                  <h4 class="product__name2">Butterfly Pea Flower Tea</h4>
+                                  <h5 class="product__price2">$12.99</h5>
+                                    <p class="star-list">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                    <div class="list-description">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam maiores quibusdam non? Magni similique vel dolor omnis fugit recusandae accusantium voluptas id, cum debitis quos dolore asperiores, molestias odio autem?</p>
+                                    </div>
+                                  <div class="btn__add__to__cart2">
+                                      <p>Add To Cart
+                                        <div class="bag2" id="bag2"><img src="Attachments/GIFS/shoppingbag2.gif"></div>
+                                      </p>
+                                    </div>
+                                    <div class="item-description2">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product__element2 Herbal">
+                                    <div class="wishlist-btn3">
+                                        <button id="heart-btn3" class="heart3"></button>
+                                    </div>
+                                  <input type="hidden" name="" id="product__id2" value="11" />
+                                  <button id = "open-modal-btn2" class="open-modal-btn2" aria-haspopup="true">More</button>
+                                  <img src="Attachments/Sample-Products/sample11.jpg" alt="" srcset="" id="product-image2" />
+                                  <h4 class="product__name2">Rosehip Tea</h4>
+                                  <h5 class="product__price2">$12.99</h5>
+                                    <p class="star-list">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                    <div class="list-description">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam maiores quibusdam non? Magni similique vel dolor omnis fugit recusandae accusantium voluptas id, cum debitis quos dolore asperiores, molestias odio autem?</p>
+                                    </div>
+                                  <div class="btn__add__to__cart2">
+                                      <p>Add To Cart
+                                        <div class="bag2" id="bag2"><img src="Attachments/GIFS/shoppingbag2.gif"></div>
+                                      </p>
+                                    </div>
+                                    <div class="item-description2">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product__element2 Herbal">
+                                    <div class="wishlist-btn3">
+                                        <button id="heart-btn3" class="heart3"></button>
+                                    </div>
+                                  <input type="hidden" name="" id="product__id2" value="12" />
+                                  <button id = "open-modal-btn2" class="open-modal-btn2" aria-haspopup="true">More</button>
+                                  <img src="Attachments/Sample-Products/sample12.jpeg" alt="" srcset="" id="product-image2" />
+                                  <h4 class="product__name2">Chamomile Tea</h4>
+                                  <h5 class="product__price2">$12.99</h5>
+                                    <p class="star-list">
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                        <strong>&star;</strong>
+                                    </p>
+                                    <div class="list-description">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam maiores quibusdam non? Magni similique vel dolor omnis fugit recusandae accusantium voluptas id, cum debitis quos dolore asperiores, molestias odio autem?</p>
+                                    </div>
+                                  <div class="btn__add__to__cart2">
+                                      <p>Add To Cart
+                                        <div class="bag2" id="bag2"><img src="Attachments/GIFS/shoppingbag2.gif"></div>
+                                      </p>
+                                    </div>
+                                    <div class="item-description2">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item-list">
+                        <div class="product__element Ayurveda">
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                          <input type="hidden" name="" id="product__id" value="1" />
+                          <button id = "open-modal-btn" class="open-modal-btn" aria-haspopup="true">More</button>
+                          <img src="Attachments/Sample-Products/sample1.jpeg" alt="" srcset="" id="product-image" />
+                          <h4 class="product__name">Tumeric Tablets</h4>
+                          <h5 class="product__price">$10.00</h5>
+                            <p class="star">
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                            </p>
+                          <div class="btn__add__to__cart">
+                              <p>Add To Cart
+                                <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif"></div>
+                              </p>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="product__element Ayurveda">
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                          <input type="hidden" name="" id="product__id" value="2" />
+                          <button id = "open-modal-btn" class="open-modal-btn" aria-haspopup="true">More</button>
+                          <img src="Attachments/Sample-Products/sample2.jpeg" alt="" srcset="" id="product-image" />
+                          <h4 class="product__name">Ginger Tablets</h4>
+                          <h5 class="product__price">$10.00</h5>
+                            <p class="star">
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                            </p>
+                          <div class="btn__add__to__cart">
+                              <p>Add To Cart
+                                <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                              </p>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="product__element Homeopathy">
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                          <input type="hidden" name="" id="product__id" value="3" />
+                          <button id = "open-modal-btn" class="open-modal-btn" aria-haspopup="true">More</button>
+                          <img src="Attachments/Sample-Products/sample3.jpeg" alt="" srcset="" id="product-image" />
+                          <h4 class="product__name">Neem Paste</h4>
+                          <h5 class="product__price">$15.99</h5>
+                            <p class="star">
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                            </p>
+                          <div class="btn__add__to__cart">
+                              <p>Add To Cart
+                                <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                              </p>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="product__element Aromatherapy">
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                          <input type="hidden" name="" id="product__id" value="4" />
+                          <button id = "open-modal-btn" class="open-modal-btn" aria-haspopup="true">More</button>
+                          <img src="Attachments/Sample-Products/sample4.jpeg" alt="" srcset="" id="product-image" />
+                          <h4 class="product__name">Lavendar Essential Oil</h4>
+                          <h5 class="product__price">$8.99</h5>
+                            <p class="star">
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                            </p>
+                          <div class="btn__add__to__cart">
+                              <p>Add To Cart
+                                <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                              </p>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="product__element Aromatherapy">
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                          <input type="hidden" name="" id="product__id" value="5" />
+                          <button id = "open-modal-btn" class="open-modal-btn" aria-haspopup="true">More</button>
+                          <img src="Attachments/Sample-Products/sample5.jpeg" alt="" srcset="" id="product-image" />
+                          <h4 class="product__name">Eucalyptus Essential Oil</h4>
+                          <h5 class="product__price">$8.99</h5>
+                            <p class="star">
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                            </p>
+                          <div class="btn__add__to__cart">
+                              <p>Add To Cart
+                                <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                              </p>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="product__element Aromatherapy">
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                          <input type="hidden" name="" id="product__id" value="6" />
+                          <button id = "open-modal-btn" class="open-modal-btn" aria-haspopup="true">More</button>
+                          <img src="Attachments/Sample-Products/sample6.jpg" alt="" srcset="" id="product-image" />
+                          <h4 class="product__name">Peppermint Essential Oil</h4>
+                          <h5 class="product__price">$8.99</h5>
+                            <p class="star">
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                            </p>
+                          <div class="btn__add__to__cart">
+                              <p>Add To Cart
+                                <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                              </p>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="product__element Aromatherapy">
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                          <input type="hidden" name="" id="product__id" value="7" />
+                          <button id = "open-modal-btn" class="open-modal-btn" aria-haspopup="true">More</button>
+                          <img src="Attachments/Sample-Products/sample7.jpeg" alt="" srcset="" id="product-image" />
+                          <h4 class="product__name">Lemon Essential Oil</h4>
+                          <h5 class="product__price">$8.99</h5>
+                            <p class="star">
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                            </p>
+                          <div class="btn__add__to__cart">
+                              <p>Add To Cart
+                                <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                              </p>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="product__element Aromatherapy">
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                          <input type="hidden" name="" id="product__id" value="8" />
+                          <button id = "open-modal-btn" class="open-modal-btn" aria-haspopup="true">More</button>
+                          <img src="Attachments/Sample-Products/sample8.jpeg" alt="" srcset="" id="product-image" />
+                          <h4 class="product__name">Rosemary Essential Oil</h4>
+                          <h5 class="product__price">$8.99</h5>
+                            <p class="star">
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                            </p>
+                          <div class="btn__add__to__cart">
+                              <p>Add To Cart
+                                <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                              </p>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="product__element Herbal">
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                          <input type="hidden" name="" id="product__id" value="9" />
+                          <button id = "open-modal-btn" class="open-modal-btn" aria-haspopup="true">More</button>
+                          <img src="Attachments/Sample-Products/sample9.jpeg" alt="" srcset="" id="product-image" />
+                          <h4 class="product__name">Peppermint Tea</h4>
+                          <h5 class="product__price">$12.99</h5>
+                            <p class="star">
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                            </p>
+                          <div class="btn__add__to__cart">
+                              <p>Add To Cart
+                                <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                              </p>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="product__element Herbal">
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                          <input type="hidden" name="" id="product__id" value="10" />
+                          <button id = "open-modal-btn" class="open-modal-btn" aria-haspopup="true">More</button>
+                          <img src="Attachments/Sample-Products/sample10.jpeg" alt="" srcset="" id="product-image" />
+                          <h4 class="product__name">Butterfly Pea Flower Tea</h4>
+                          <h5 class="product__price">$12.99</h5>
+                            <p class="star">
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                            </p>
+                          <div class="btn__add__to__cart">
+                              <p>Add To Cart
+                                <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                              </p>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="product__element Herbal">
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                          <input type="hidden" name="" id="product__id" value="11" />
+                          <button id = "open-modal-btn" class="open-modal-btn" aria-haspopup="true">More</button>
+                          <img src="Attachments/Sample-Products/sample11.jpg" alt="" srcset="" id="product-image" />
+                          <h4 class="product__name">Rosehip Tea</h4>
+                          <h5 class="product__price">$12.99</h5>
+                            <p class="star">
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                            </p>
+                          <div class="btn__add__to__cart">
+                              <p>Add To Cart
+                                <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                              </p>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                        <div class="product__element">
+                            <div class="wishlist-btn3">
+                                <button id="heart-btn3" class="heart3"></button>
+                            </div>
+                          <input type="hidden" name="" id="product__id" value="12" />
+                          <button id = "open-modal-btn" class="open-modal-btn" aria-haspopup="true">More</button>
+                          <img src="Attachments/Sample-Products/sample12.jpeg" alt="" srcset="" id="product-image" />
+                          <h4 class="product__name">Chamomile Tea</h4>
+                          <h5 class="product__price">$12.99</h5>
+                            <p class="star">
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                                <strong>&star;</strong>
+                            </p>
+                          <div class="btn__add__to__cart">
+                              <p>Add To Cart
+                                <div class="bag" id="bag"><img src="Attachments/GIFS/shoppingbag2.gif" style="width: 45px; height: 50px;"></div>
+                              </p>
+                            </div>
+                            <div class="item-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script> type="text/javascript"
+        window.onload = function () {
+            Grid();
+            GridSearch(); // why does it only work here ugh 
+        }
+        var clicked = false;
+                $(".grid-active-btn").click(function(){
+                    $(".product__element").css("display", "block");
+                    $(".item-list2").css("display", "none");
+                    Grid();
+                    clicked = true;
+                    //window.location.reload(); //grid search not working without window reload.... :(
+                    //alert("pipa");
+                    //GridSearch();
+                    //alert("kakaka");
+                });
+                $(".details-active-btn").click(function(){
+                    clicked = false;
+                    $(".product__element").css("display", "none");
+                    $(".item-list2").css("display", "block");
+                    $('.product__element2').show('5000');
+                    List();
+                    ListSearch();
+                });
+                if(clicked == true)
+                {
+                    alert("ya"); //not working
+                    document.getElementsByClassName('grid-active-btn').addEventListener('click', function() { GridSearch(); }, false);
+                }
+            /* filter menu */
+                $(document).on('click','.product-filter li', function()
+                {
+                    $(this).addClass('product-filter-active').siblings().removeClass('product-filter-active')
+                });
+            /*product filter menu */
+            function List(){
+                $(document).ready(function()
+                {
+                    $('.list').click(function()
+                    {
+                        const value = $(this).attr('data-filter');
+                        if(value == 'all')
+                        {
+                            $('.product__element2').show('5000');
+                            $('.product__element').hide('5000');
+                        }
+                        else
+                        {
+                            $('.product__element2').not('.'+ value).hide('5000');
+                            $('.product__element2').filter('.'+ value).show('5000');
+
+                            $('.product__element').not('.'+ value).hide('5000');
+                            $('.product__element').filter('.'+ value).hide('5000');
+                        }
+                    });
+                });
+            }
+            function Grid(){
+                $(document).ready(function()
+                {
+                    $('.list').click(function()
+                    {
+                        const value = $(this).attr('data-filter');
+                        if(value == 'all')
+                        {
+                            $('.product__element').show('5000');
+                        }
+                        else
+                        {
+                            $('.product__element').not('.'+ value).hide('5000');
+                            $('.product__element').filter('.'+ value).show('5000'); 
+                        }
+                    });
+                });
+            }
+            //Search button click
+            function GridSearch(){
+                document.getElementById("search-btn").addEventListener("click", () => {
+                    //initializations
+                    let searchInput2 = document.getElementById("search-input").value;
+                    let elements2 = document.querySelectorAll(".product__name");
+                    let cards2 = document.querySelectorAll(".product__element");
+                    //make sure the search is going to search from all products not the ones shown after each search
+                    elements2.forEach((element, index) => {
+                        cards2[index].classList.remove("hide");
+                    });
+                    //loop through all elements
+                    elements2.forEach((element, index) => {
+                        //check if text includes the search value
+                        if (element.innerText.includes(searchInput2.toUpperCase())) 
+                        {
+                            //display matching card
+                            cards2[index].classList.remove("hide");
+                        } 
+                        else 
+                        {
+                            //hide others
+                            cards2[index].classList.add("hide");
+                        }
+                    });
+                    return false;
+                });
+            }
+            function ListSearch(){
+                document.getElementById("search-btn").addEventListener("click", () => {
+                    //initializations
+                    let searchInput = document.getElementById("search-input").value;
+                    let elements = document.querySelectorAll(".product__name2");
+                    let cards = document.querySelectorAll(".product__element2");
+                    //make sure the search is going to search from all products not the ones shown after each search
+                    elements.forEach((element, index) => {
+                        cards[index].classList.remove("hide");
+                    });
+                    //loop through all elements
+                    elements.forEach((element, index) => {
+                        //check if text includes the search value
+                        if (element.innerText.includes(searchInput.toUpperCase())) 
+                        {
+                            //display matching card
+                            cards[index].classList.remove("hide");
+                        } 
+                        else 
+                        {
+                            //hide others
+                            cards[index].classList.add("hide");
+                        }
+                    });
+                    return false;
+                });
+            }
+                
+            $('input, select').keypress(function(event) { return event.keyCode != 13; });
+        </script> 
+        <script>
+            $('.heart').click(function(){
+                if($(this).hasClass('active')){
+                    $(this).removeClass('active')
+                } 
+                else {
+                    $(this).addClass('active')
+                }
+            });
+            //
+            let dropdownBtn1 = document.querySelector('.dep1-btn');
+            let menuContent1 = document.querySelector('.subpages-1');
+            var arrowIcon = document.getElementById("angle");
+            dropdownBtn1.addEventListener('click',()=>{
+                if(menuContent1.style.display==="")
+                {
+                    menuContent1.style.display="block";
+                } else 
+                {
+                    menuContent1.style.display="";
+                }
+            })
+            //
+            let dropdownBtn2 = document.querySelector('.dep2-btn');
+            let menuContent2 = document.querySelector('.subpages-2');
+            dropdownBtn2.addEventListener('click',()=>{
+            if(menuContent2.style.display===""){
+                menuContent2.style.display="block";
+            } else {
+                menuContent2.style.display="";
+            }
+            })
+            //
+            let dropdownBtn3 = document.querySelector('.dep3-btn');
+            let menuContent3 = document.querySelector('.subpages-3');
+            dropdownBtn3.addEventListener('click',()=>{
+            if(menuContent3.style.display===""){
+                menuContent3.style.display="block";
+            } else {
+                menuContent3.style.display="";
+            }
+            })
+            //
+            let dropdownBtn4 = document.querySelector('.dep4-btn');
+            let menuContent4 = document.querySelector('.subpages-4');
+            dropdownBtn4.addEventListener('click',()=>{
+            if(menuContent4.style.display===""){
+                menuContent4.style.display="block";
+            } else {
+                menuContent4.style.display="";
+            }
+            })
+            //
+            let dropdownBtn5 = document.querySelector('.dep5-btn');
+            let menuContent5 = document.querySelector('.subpages-5');
+            dropdownBtn5.addEventListener('click',()=>{
+            if(menuContent5.style.display===""){
+                menuContent5.style.display="block";
+            } else {
+                menuContent5.style.display="";
+            }
+            })
+            //
+            let dropdownBtn6 = document.querySelector('.dep6-btn');
+            let menuContent6 = document.querySelector('.subpages-6');
+            dropdownBtn6.addEventListener('click',()=>{
+            if(menuContent6.style.display===""){
+                menuContent6.style.display="block";
+            } else {
+                menuContent6.style.display="";
+            }
+            })
+            //
+            let dropdownBtn7 = document.querySelector('.dep7-btn');
+            let menuContent7 = document.querySelector('.subpages-7');
+            dropdownBtn7.addEventListener('click',()=>{
+            if(menuContent7.style.display===""){
+                menuContent7.style.display="block";
+            } else {
+                menuContent7.style.display="";
+            }
+            })
+            //
+            let dropdownBtn8 = document.querySelector('.dep8-btn');
+            let menuContent8 = document.querySelector('.subpages-8');
+            dropdownBtn8.addEventListener('click',()=>{
+            if(menuContent8.style.display===""){
+                menuContent8.style.display="block";
+            } else {
+                menuContent8.style.display="";
+            }
+            })
+            //
+            let dropdownBtn9 = document.querySelector('.dep9-btn');
+            let menuContent9 = document.querySelector('.subpages-9');
+            dropdownBtn9.addEventListener('click',()=>{
+            if(menuContent9.style.display===""){
+                menuContent9.style.display="block";
+            } else {
+                menuContent9.style.display="";
+            }
+            })
+            //
+            let dropdownBtn10 = document.querySelector('.dep10-btn');
+            let menuContent10 = document.querySelector('.subpages-10');
+            dropdownBtn10.addEventListener('click',()=>{
+            if(menuContent10.style.display===""){
+                menuContent10.style.display="block";
+            } else {
+                menuContent10.style.display="";
+            }
+            })
+            //
+            let dropdownBtn11 = document.querySelector('.dep11-btn');
+            let menuContent11 = document.querySelector('.subpages-11');
+            dropdownBtn11.addEventListener('click',()=>{
+            if(menuContent11.style.display===""){
+                menuContent11.style.display="block";
+            } else {
+                menuContent11.style.display="";
+            }
+            })
+            //
+            let dropdownBtn12 = document.querySelector('.dep12-btn');
+            let menuContent12 = document.querySelector('.subpages-12');
+            dropdownBtn12.addEventListener('click',()=>{
+            if(menuContent12.style.display===""){
+                menuContent12.style.display="block";
+            } else {
+                menuContent12.style.display="";
+            }
+            })
+            let barsBtn = document.querySelector('.bars');
+            let dropDownContent = document.querySelector('.sidebar');
+            barsBtn.addEventListener('click',()=>{
+            if(dropDownContent.style.display===""){
+                dropDownContent.style.display="block";
+            } else {
+                dropDownContent.style.display="";
+            }
+            })
+    
+            let closeBtn = document.querySelector('#close');
+            let dropDownContent2 = document.querySelector('.sidebar');
+            closeBtn.addEventListener('click',()=>{
+            if(dropDownContent2.style.display===""){
+                dropDownContent2.style.display="block";
+            } else {
+                dropDownContent2.style.display="";
+            }
+            })
+        </script>
+         <script>
+            const miniDisplay = document.querySelector('.mini-cart-display');
+            $(".mini-cart-btn").on("click", function(){
+                miniDisplay.classList.toggle('active');
+            });
+            function remove(){
+                this.parentNode.parentNode.style.display = "none";
+                this.parentNode.parentNode.removeChild(this.parentNode);
+            }
+            //delete items in cart
+            var lis = document.querySelectorAll('#mini-cart-item');
+            var button = document.querySelectorAll('#mini-delete');
+
+            for (var i = 0, len = lis.length; i < len; i++) {
+                button[i].addEventListener('click', remove, false);
+            }
+            //add items to cart
+            /*
+                ............
+            */
+            //totaling item prices
+            var sum = 0;
+            for(var i = 0; i < 4; i++)
+            {
+                sum += findCost(i);
+            }
+            function findCost(index)
+            {
+                var quantity = $('.mini-quantity').eq(i).text();
+                var price = $('.mini-price').eq(i).text();
+                price = price.substring(1);
+                return (quantity * price);
+            }
+            $("#mini-total").text("$" + sum.toFixed(2));
+        </script>
+        <script>
+            $('.heart3').click(function(){
+                if($(this).hasClass('active')){
+                    $(this).removeClass('active')
+                } 
+                else {
+                    $(this).addClass('active')
+                }
+            });
+        </script>
+        <script text="text/javascript"> 
+                var data = 0;
+                $(".open-modal-btn").on("click", function(){
+                    $(".modal-overlay").addClass("active");
+                    $(".category-section").addClass('stop-scrolling');
+                    
+                });
+                function closeModal(){
+                    data = 0;
+                    document.getElementById("quantity").innerText = data;
+                    $(".modal-overlay").removeClass("active");
+                    $(".category-section").removeClass('stop-scrolling');
+                }
+                $(".modal-close, .modal-overlay, .item-add-btn2").on("click", function(){
+                    closeModal();
+                });
+                $(document).keyup(function(e) {
+                    if (e.keyCode == 27) {
+                        closeModal();
+                    }
+                });
+
+                //make a function that stops whole page from scrolling when anchor tag is clicked within the modal !!!!!!!!!!!!!!!!!!!!!
+
+                document.getElementById("quantity").innerText = data;
+                function decrement(){
+                    data = data - 1;
+                    if(data > 0)
+                    {
+                        document.getElementById("quantity").innerText = data;
+                    }
+                    if(data < 0)
+                    {
+                        data = 0;
+                        document.getElementById("quantity").innerText = data;
+                    }
+                }
+                function increment(){
+                    data = data + 1;
+                    document.getElementById("quantity").innerText = data;
+                    document.getElementById("quantity").dataset = data;
+
+                }
+                $(".q-btn1").on("click", function(){
+                    decrement();
+                });
+                $(".q-btn2").on("click", function(){
+                    increment();
+                });
+        </script>
+        <script>
+            const btn = document.querySelector(".post-btn");
+            const post = document.querySelector(".post");
+            const widget = document.querySelector(".star-widget");
+            const editBtn = document.querySelector(".edit");
+            const Rform = document.querySelector(".actual-form");
+            const r1 = document.querySelector(".rate-1");
+            const r2 = document.querySelector(".rate-2");
+            const r3 = document.querySelector(".rate-3");
+            const r4 = document.querySelector(".rate-4");
+            const r5 = document.querySelector(".rate-5");
+
+            $(".post-btn").on("click", function(){
+                widget.style.display = "none";
+                post.style.display = "block";
+                Rform.style.display = "none";
+
+                createReviewBox();
+
+                editBtn.onclick = ()=>{
+                    widget.style.display = "block";
+                    post.style.display = "none";
+                    Rform.style.display = "block";
+                }
+                return false;
+            });
+            var stars = 0;
+            function checkStars(){
+                if(document.getElementById('rate-5').checked) 
+                {
+                    stars = 5;
+                }
+                else if(document.getElementById('rate-4').checked)  
+                {
+                    stars = 4
+                }
+                else if(document.getElementById('rate-3').checked)  
+                {
+                    stars = 3
+                }
+                else if(document.getElementById('rate-2').checked)  
+                {
+                    stars = 2
+                }
+                else if(document.getElementById('rate-1').checked)  
+                {
+                    stars = 1
+                }
+                return stars;
+            }
+            function createReviewBox() {
+                var first = document.createElement("div");
+                first.className = "review-box";
+
+                var second = document.createElement("div");
+                second.className = "user-review-text";
+
+                var third = document.createElement("div");
+                third.className = "users-name";
+
+                var fourth = document.createElement("div");
+                fourth.className = "user-profile-img";
+
+                var fifth = document.createElement("div");
+                fifth.className = "star-rating";
+                var star1 = document.createElement("i"); 
+                var star2 = document.createElement("i"); 
+                var star3 = document.createElement("i"); 
+                var star4 = document.createElement("i"); 
+                var star5 = document.createElement("i");
+                star1.className = "fa fa-star";
+                star2.className = "fa fa-star";
+                star3.className = "fa fa-star";
+                star4.className = "fa fa-star";
+                star5.className = "fa fa-star";
+                var star6 = document.createElement("i"); 
+                var star7 = document.createElement("i"); 
+                var star8 = document.createElement("i"); 
+                var star9 = document.createElement("i"); 
+                var star10 = document.createElement("i");
+                star6.className = "fa fa-star-o";
+                star7.className = "fa fa-star-o";
+                star8.className = "fa fa-star-o";
+                star9.className = "fa fa-star-o";
+
+                var str = document.getElementById("review-user-text").value;
+                var input = str;
+                input.className = "user-review-text";
+                input = document.createTextNode(input);
+
+                var str2 = document.getElementById("review-users-name").value;
+                var input2 = str2;
+                input2.className = "users-name";
+                input2 = document.createTextNode(input2);
+
+                var input3 = document.getElementsByClassName("user-profile-img").src;
+                var s5 = document.getElementById("rate-5").checked; 
+                var s4 = document.getElementById("rate-4").checked; 
+                var s3 = document.getElementById("rate-3").checked; 
+                var s2 = document.getElementById("rate-2").checked; 
+                var s1 = document.getElementById("rate-1").checked; 
+                if(s5)
+                {
+                    fifth.append(star1);
+                    fifth.append(star2);
+                    fifth.append(star3);
+                    fifth.append(star4);
+                    fifth.append(star5);
+                }
+                else if(s4)
+                {
+                    fifth.append(star1);
+                    fifth.append(star2);
+                    fifth.append(star3);
+                    fifth.append(star4);
+                    fifth.append(star6);
+                }
+                else if(s3)
+                {
+                    fifth.append(star1);
+                    fifth.append(star2);
+                    fifth.append(star3);
+                    fifth.append(star6);
+                    fifth.append(star7);
+                }
+                else if(s2)
+                {
+                    fifth.append(star1);
+                    fifth.append(star2);
+                    fifth.append(star6);
+                    fifth.append(star7);
+                    fifth.append(star8);
+                }
+                else if(s1)
+                {
+                    fifth.append(star1);
+                    fifth.append(star6);
+                    fifth.append(star7);
+                    fifth.append(star8);
+                    fifth.append(star9);
+                }
+
+
+                second.appendChild(input);
+                third.appendChild(input2);
+
+                first.appendChild(fourth);
+                first.appendChild(fifth);
+                first.appendChild(third);
+                first.appendChild(second);
+
+                document.querySelector(".product-reviews-container").appendChild(first);
+            }
+            /*
+            function generateModal(){
+                $("#open-modal-btn").click(function () {
+                    var name = $("#item-1-name").innerText;
+                    var price = $("#item-1-price").innerText;
+                    var str = "You Have Entered " 
+                        + "Name: " + name 
+                        + " and Marks: " + marks;
+                    $("#modal_body").html(str);
+                });
+            }
+            */
+          </script>
+          <script>
+            const cartDOM = document.querySelector(".cart__items");
+            const addToCartBtn = document.querySelectorAll(".btn__add__to__cart,.btn__add__to__cart2");
+            const cartCounter = document.querySelector(".mini-cart-btn");
+            const totalCost = document.querySelector(".total__cost");
+            const totalCount = document.querySelector("#total__counter");
+            const checkOutBtn = document.querySelector(".check_out_btn");
+    
+            // assign all values from local stoarge
+            let cartItems = (JSON.parse(localStorage.getItem("cart_items")) || []);
+    
+    
+            document.addEventListener("DOMContentLoaded", loadData);
+    
+    
+            checkOutBtn.addEventListener("click", () =>  {
+                alert("Your Order Sent Succesfully");
+                clearCartItems();
+            })
+    
+            cartCounter.addEventListener("click", () => {
+                cartDOM.classList.toggle("active");
+            })
+    
+            addToCartBtn.forEach(btn => {
+    
+                btn.addEventListener("click", () => {
+                    let parentElement = btn.parentElement;
+    
+                    const product = {
+                        id: parentElement.querySelector("#product__id, #product__id2").value,
+                        name: parentElement.querySelector(".product__name, .product__name2").innerText,
+                        image: parentElement.querySelector("#product-image, #product-image2").getAttribute("src"),
+                        price: parentElement.querySelector(".product__price, .product__price2").innerText.replace("$", ""),
+                        quantity: 1
+                    }
+    
+                    let isIncart = cartItems.filter(item => item.id === product.id).length > 0;
+    
+                    // check if alreday Exists
+                    if (!isIncart) {
+                        addItemToTheDOM(product);
+                    } else {
+                        alert("Product Already in the Cart");
+                        return;
+                    }
+    
+                    const cartDOMItems = document.querySelectorAll(".cart_item");
+    
+                    cartDOMItems.forEach(individualItem => {
+                        if (individualItem.querySelector("#product__id,#product__id2").value === product.id) {
+                            // increrase
+                            increaseItem(individualItem,product);
+                            // decrease
+                            decreaseItem(individualItem,product);
+                            // Removing Element
+                            removeItem(individualItem,product);
+                            
+                        }
+                    })
+                    cartItems.push(product);
+                    calculateTotal();
+                    saveToLocalStorage();
+                });
+    
+            })
+    
+            function loadData() {
+                if(cartItems.length > 0 ){
+                    cartItems.forEach( product => {
+                        addItemToTheDOM(product);
+                
+                        const cartDOMItems = document.querySelectorAll(".cart_item");
+                
+                        cartDOMItems.forEach(individualItem => {
+                            if (individualItem.querySelector("#product__id, #product__id2").value === product.id) {
+                                // increrase
+                                increaseItem(individualItem,product);
+                                // decrease
+                                decreaseItem(individualItem,product);
+                                // Removing Element
+                                removeItem(individualItem,product);
+                            
+                            }
+                        });
+                    });
+                    calculateTotal();
+                }
+            }
+    
+            function calculateTotal() {
+                let total = 0;
+                cartItems.forEach( item => {
+                    total += item.quantity * item.price;
+                });
+                totalCost.innerText= total.toFixed(2);
+                totalCount.innerText = cartItems.length.toFixed(2);
+    
+            }
+    
+            function saveToLocalStorage(){
+    
+                localStorage.setItem("cart_items", JSON.stringify(cartItems));
+    
+            }
+            function clearCartItems(){
+    
+                localStorage.clear();
+                cartItems = [];
+    
+                document.querySelectorAll(".cart__items").forEach( item => {
+    
+                    item.querySelectorAll(".cart_item").forEach( node =>{
+                        node.remove();
+                    });
+    
+                });
+                cartDOM.classList.toggle("active");
+                calculateTotal();
+                
+    
+            }
+    
+            function addItemToTheDOM(product){
+                // Adding the new Item to the Dom
+                cartDOM.insertAdjacentHTML("afterbegin", 
+                `<div class="cart_item">
+                    <input type="hidden" id="product__id" value="${product.id}">
+                    <img id="product_image" src="${product.image}" alt="" srcset="">
+                    <h4 class="product__name">${product.name}</h4>
+                    <a class="btn__small" action="decrease">&minus;</a> <h4 class="product__quantity">${product.quantity}</h4><a class="btn__small" action="increase">&plus;</a>
+                    <span id="product__price">${product.price}</span>
+                    <a class="btn__small btn_remove" action="remove">&times;</a>
+                </div>`);
+            }
+    
+            function increaseItem(individualItem, product){
+    
+                individualItem.querySelector("[action='increase']").addEventListener('click', () => {
+                    // Actual Array
+                    cartItems.forEach(cartItem => {
+                        if (cartItem.id === product.id) {
+                            individualItem.querySelector(".product__quantity").innerText = ++cartItem.quantity;
+                            calculateTotal();     
+                            saveToLocalStorage();   
+                        }
+                    })
+                });
+    
+            }
+    
+            function decreaseItem(individualItem,product){
+    
+                individualItem.querySelector("[action='decrease']").addEventListener('click', () => {
+                    // all cart items in the dom
+                    cartItems.forEach(cartItem => {
+                        // Actual Array
+                        if (cartItem.id === product.id) {
+                            if (cartItem.quantity > 1) {
+                                individualItem.querySelector(".product__quantity").innerText = --cartItem.quantity;
+                                calculateTotal();
+                                saveToLocalStorage();
+                            } else {
+                                // removing this element and assign the new elemntos to the old of the array
+                                console.log(cartItems);
+    
+                                cartItems = cartItems.filter(newElements => newElements.id !== product.id);
+                                individualItem.remove();
+    
+                                calculateTotal();
+                                saveToLocalStorage();
+    
+                            }
+    
+                        }
+                    })
+                });
+            }
+    
+            function removeItem(individualItem, product){
+    
+                individualItem.querySelector("[action='remove']").addEventListener('click', () => {
+                    cartItems.forEach(cartItem => {
+                        if (cartItem.id === product.id) {
+                            cartItems = cartItems.filter(newElements => newElements.id !== product.id);
+                            individualItem.remove();
+                            calculateTotal();
+                            saveToLocalStorage();
+                        }
+                    })
+                });
+            }
+        </script>
+  </body>
+</html>
