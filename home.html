@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Health Dispensary E-Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script> src="https://kit.fontaesome.com/a076d05399.js"</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+</head>          
+<body>
+    <nav class="navbar1">
+        <div class="max-width">
+             <div class="logo"><a href="home.html"><img src="Attachments/Logo/logo.png"></a></div>
+             <ul class="menu">
+                 <div class="border-box">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li> 
+                    <li><a href="about.html">About Us</a></li> 
+                    <li><a href="home.html">Blogs</a></li> 
+                    <li><a href="home.html">Bookmarks</a></li> 
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="cartindex.html"><span class="fa fa-shopping-cart" style="font-size:22px"></span></a></li> 
+                    <li><a href="login.html"><span class="fa fa-user-circle-o" style="font-size:20px"></span></a></li> 
+                 </div>
+             </ul>
+        </div> 
+     </nav>
+     <nav class="sub-navbar">
+        <div class="max-width">
+             <ul class="menu"> 
+                 <div class="border-box">
+                     <!-- <li><a href="#"><span id="bars-btn" class="fa fa-bars" style="font-size:15px"></span></a></li> 
+                    <button onclick="myFunction()" class="bars"><span class="fa fa-bars" style="font-size:15px"></span></button>
+                    -->
+                    <li><a href="#" class="bars"><span class="fa fa-bars" style="font-size:15px"></span></a></li> 
+                    <li><a href="category1.html">Natural Medicine</a></li>
+                    <li><a href="#prescription">Prescription Medication</a></li>
+                    <li><a href="#supplement">Supplements</a></li>
+                    <li><a href="#coughncold">Cough & Cold</a></li>
+                    <li><a href="#painreliever">Pain Relievers</a></li>
+                    <li><a href="#allergy">Allergies</a></li>
+                    <li><a href="#firstaid">First-Aid</a></li>
+                    <li><a href="#skincare">Skin Care</a></li>
+                    <li><a href="#haircare">Hair Care</a></li>
+                    <li><a href="#eyecare">Eye Care</a></li>
+                    <li><a href="#footcare">Foot Care</a></li>
+                    <li><a href="#feminine">Feminine Care</a></li>
+                 </div>
+             </ul>
+        </div> 
+     </nav>
+     <nav class="sidebar">
+         <div class="sidebar-content">
+            <div class="text">
+                <span>Browse Below</span>
+                <p id = "shoppingbag" class="fa fa-shopping-bag" aria-hidden="true"></p>
+                <i id="close" class="fa fa-close"></i>
+           </div>
+            <ul>
+               <li>
+                   <a href="#" class="dep1-btn">Natural Medicine
+                       <span id="angle" class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-1">
+                       <li><a href="#">Ayurveda</a></li>
+                       <li><a href="#">Homeopathy</a></li>
+                       <li><a href="#">Aromatherapy</a></li>
+                       <li><a href="#">Herbal Medicine</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep2-btn">Prescription Medication
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-2">
+                       <li><a href="#">Track your Prescription & Refills</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep3-btn">Supplements
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-3">
+                       <li><a href="#">Vitamins and Minerals</a></li>
+                       <li><a href="#">Herbals and Botanicals</a></li>
+                       <li><a href="#">Specialty Supplements</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep4-btn">Cough & Cold
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-4">
+                       <li><a href="#">Nasal Decongestants</a></li>
+                       <li><a href="#">Cough Suppressants</a></li>
+                       <li><a href="#">Expectorants</a></li>
+                       <li><a href="#">Antihistamines</a></li>
+                       <li><a href="#">Pain Relievers</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep5-btn">Pain Relievers
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-5">
+                       <li><a href="#">Acetaminophen</a></li>
+                       <li><a href="#">Nonsteroidal Anti-Inflammatory (NSAID)</a></li>
+                       <li><a href="#">Combo (Acetaminophen & NSAID)</a></li>
+                       <li><a href="#">Topical Pain Relievers</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep6-btn">Allergies
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-6">
+                       <li><a href="#">Pills and Liquids</a></li>
+                       <li><a href="#">Nasal Sprays</a></li>
+                       <li><a href="#">Eyedrops</a></li>
+                       <li><a href="#">Topical Allergy Relief</a></li>
+                   </ul>
+               </li>
+               <li>
+                   <a href="#" class="dep7-btn">First-Aid
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-7">
+                       <li><a href="#">Kits</a></li>
+                       <li><a href="#">Bandages</a></li>
+                       <li><a href="#">Dressings & Gauze</a></li>
+                       <li><a href="#">Tapes</a></li>
+                       <li><a href="#">Sponges</a></li>
+                       <li><a href="#">Wound Cleansers</a></li>
+                       <li><a href="#">Wound Care</a></li>
+                   </ul>
+               </li>
+               <li>
+                    <a href="#" class="dep8-btn">Skin Care
+                        <span class="fa fa-angle-right first"></span>
+                    </a>
+                    <ul class="subpages-8">
+                        <li><a href="#">Lotions & Moisturizers</a></li>
+                        <li><a href="#">Cleansers</a></li>
+                        <li><a href="#">Face Masks & Treatments</a></li>
+                        <li><a href="#">Polishes & Scrubs</a></li>
+                        <li><a href="#">Toners & Astringents</a></li>
+                        <li><a href="#">Sunscreens & Tanning Oils</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dep9-btn">Hair Care
+                        <span class="fa fa-angle-right first"></span>
+                    </a>
+                    <ul class="subpages-9">
+                        <li><a href="#">Scalp Treatments</a></li>
+                        <li><a href="#">Hair Masks</a></li>
+                        <li><a href="#">Treatment Oils</a></li>
+                        <li><a href="#">Shampoo & Conditioners</a></li>
+                        <li><a href="#">Styling Products</a></li>
+                        <li><a href="#">Hair Loss Products</a></li>
+                    </ul>
+                </li>
+               <li>
+                   <a href="#" class="dep10-btn">Eye Care
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-10">
+                       <li><a href="#">Contact Lense Care</a></li>
+                       <li><a href="#">Eye Drops & Eye Lubricants</a></li>
+                       <li><a href="#">Eye Washes</a></li>
+                       <li><a href="#">Topical Eye Treatments</a></li>
+                       <li><a href="#">Order Contacts</a></li>
+                   </ul>
+               </li>
+               <li>
+                <a href="#" class="dep11-btn">Foot Care
+                    <span class="fa fa-angle-right first"></span>
+                </a>
+                <ul class="subpages-11">
+                    <li><a href="#">Foot Creams & Treatments</a></li>
+                    <li><a href="#">Foot & Leg Massagers</a></li>
+                    <li><a href="#">Diabetic Foot Care</a></li>
+                    <li><a href="#">Athlete's Foot & Antifungal</a></li>
+                    <li><a href="#">Foot Odor Control</a></li>
+                    <li><a href="#">Corns, Calluses, Blisters & Bunions Relief</a></li>
+                </ul>
+            </li>
+               <li>
+                   <a href="#" class="dep12-btn">Feminine Care
+                       <span class="fa fa-angle-right first"></span>
+                   </a>
+                   <ul class="subpages-12">
+                       <li><a href="#">Pads</a></li>
+                       <li><a href="#">Pantiliners</a></li>
+                       <li><a href="#">Tampons</a></li>
+                       <li><a href="#">Menstrual Cups</a></li>
+                       <li><a href="#">Menstrual Pain Relief</a></li>
+                       <li><a href="#">Bladder Health</a></li>
+                       <li><a href="#">Yeast Infections</a></li>
+                       <li><a href="#">Menopause Relief</a></li>
+                   </ul>
+               </li>
+            </ul>
+         </div>
+     </nav>
+    <!--home section starts here-->
+    <section class="all-home">
+        <div class="overlay1"></div>
+        <section class="home" id="home">
+            <div class="max-width">
+                <div id="dude" class="home-content">
+                    <div class="text1">Welcome!</div>
+                    <div class="text2">All of your healthcare needs</div>
+                    <div class="text3">At the comfort of your own home</div>
+                </div>
+            </div>
+            <div class="search">
+                <form action="" method ="" class="search-bar">
+                    <input type="text" placeholder="Browse Items   .   .   ." name ="q">
+                    <button type="submit"><img src="Attachments/Icons/searchicon.png"></button>
+                </form>
+            </div>
+            <!--image slider starts here-->
+            <div class="slider" id="slider1">
+                <!-- Slides -->
+                <div class="slide-imgs">  
+                    <img src="Attachments/Slider/2.jpeg">
+                </div>
+                <div class="slide-imgs">  
+                    <img src="Attachments/Slider/1.jpeg">
+                </div>
+                <div class="slide-imgs">  
+                    <img src="Attachments/Slider/3.jpeg">
+                </div>
+                <div class="slide-imgs">  
+                    <img src="Attachments/Slider/4.jpeg">
+                </div>
+                <div class="slide-imgs">  
+                    <img src="Attachments/Slider/5.jpeg">
+                </div>
+                <div class="slide-imgs">  
+                    <img src="Attachments/Slider/6.jpeg">
+                </div>
+                <div class="slide-imgs">  
+                    <img src="Attachments/Slider/7.jpeg">
+                </div>
+                <div class="slide-imgs">  
+                    <img src="Attachments/Slider/8.jpeg">
+                </div>
+                
+            </div>
+            <a href="#browse-home">
+                <div class="scroll-down" id="browse-home"></div>
+            </a>
+        </section>
+        <section class="browse-home">
+            <div class="category-title">
+                <p>Shop by Category! <span class="fa fa-shopping-bag" style="font-size:60px"></span></p>
+            </div>
+            <div class="category-box">
+                <a href="" class="category-grid">
+                    <a class="category-grid" href="category1.html">
+                        <img src="Attachments/Category-Icons/naturalmedicine.png" alt="">
+                        <span>Natural<br>Medicine</span>
+                    </a>
+                    <a class="category-grid" href="shop.html">
+                        <img src="Attachments/Category-Icons/prescription.png" alt="">
+                        <span>Track your Prescriptions</span>
+                    </a>
+                    <a class="category-grid" href="shop.html">
+                        <img src="Attachments/Category-Icons/supplements.png" alt="">
+                        <span>Supplements</span>
+                    </a>
+                    <a class="category-grid" href="shop.html">
+                        <img src="Attachments/Category-Icons/coughcold.png" alt="">
+                        <span>Cough & Cold</span>
+                    </a>
+                    <a class="category-grid" href="shop.html">
+                        <img src="Attachments/Category-Icons/painreliever.png" alt="">
+                        <span>Pain Relievers</span>
+                    </a>
+                    <a class="category-grid" href="shop.html">
+                        <img src="Attachments/Category-Icons/allergies.png" alt="">
+                        <span>Allergies</span>
+                    </a>
+                </a>
+            </div>
+            <div class="category-box2">
+                <a href="" class="category-grid">
+                    <a class="category-grid" href="shop.html">
+                        <img src="Attachments/Category-Icons/firstaid.png" alt="">
+                        <span>First-Aid</span>
+                    </a>
+                    <a class="category-grid" href="shop.html">
+                        <img src="Attachments/Category-Icons/skincare.png" alt="">
+                        <span>Skin Care</span>
+                    </a>
+                    <a class="category-grid" href="shop.html">
+                        <img src="Attachments/Category-Icons/haircare.png" alt="">
+                        <span>Hair Care</span>
+                    </a>
+                    <a class="category-grid" href="shop.html">
+                        <img src="Attachments/Category-Icons/eyecare.png" alt="">
+                        <span>Eye Care</span>
+                    </a>
+                    <a class="category-grid" href="shop.html">
+                        <img src="Attachments/Category-Icons/footcare.png" alt="">
+                        <span>Foot Care</span>
+                    </a>
+                    <a class="category-grid" href="shop.html">
+                        <img src="Attachments/Category-Icons/femininecare.png" alt="">
+                        <span>Feminine Care</span>
+                    </a>
+                </a>
+            </div>
+            <a href="#previews-home">
+                <div class="scroll-down-two" id="scroll-down-two"></div>
+            </a>
+        </section>
+        <section class="previews-home">
+            <div class="preview-text" id="previews-home">
+                <h1>Explore Items Across Our Store&nbsp;<span class="fa fa-search" style="font-size: 60px; padding: 5px;"></span></h1>
+            </div>
+            <div class="shop-steps">
+                <img src="Attachments/GIFS/search.gif" width="70px" height="70px">
+                <p>Browse for<br>Items</p>
+                <img src="Attachments/GIFS/addcart.gif" width="70px" height="70px">
+                <p>Add Items<br>to Cart</p>
+                <img src="Attachments/GIFS/payment.gif" width="70px" height="70px">
+                <p>Enter Payment <br>& Shipping Info</p>
+                <img src="Attachments/GIFS/delivery.gif" width="70px" height="70px">
+                <p>Order Gets<br>Delivered to You</p>
+                <img src="Attachments/GIFS/confirm.gif" width="70px" height="70px">
+                <p>Tell Us About<br> Your Experience</p>
+                <img src="Attachments/GIFS/register.gif" width="70px" height="70px">
+                <p>Register<br>&nbsp;&nbsp;&nbsp;&nbsp;to Enjoy&nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-arrow-right" style="font-size: 18px"></span></p>
+                <img src="Attachments/GIFS/deals.gif" width="70px" height="70px">
+                <p>Exclusive<br>Deals</p>
+            </div>
+            <header>
+                <h1>Our Best Sellers</h1>
+                <p>
+                    <span class="btnMovers">&#139;</span>
+                    <span class="btnMovers">&#155;</span>
+                </p>
+            </header>
+            <section class="product-preview">
+                <div class="product">
+                    <div class="wishlist-btn2">
+                        <button id="heart-btn2" class="heart2"></button>
+                    </div> 
+                    <picture>
+                        <img src="Attachments/Featured Products/h-image1.jpeg">
+                    </picture>
+                    <div class="details">
+                        <p>
+                            <b>Product 1</b>
+                        </p>
+                        <samp>$45.00</samp>
+                    </div>
+                    <div class="button">
+                        <p class="star">
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                        </p>
+                        <a href="#">Add Cart</a>
+                             
+                        </a>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wishlist-btn2">
+                        <button id="heart-btn2" class="heart2"></button>
+                    </div> 
+                    <picture>
+                        <img src="Attachments/Featured Products/h-image2.jpeg">
+                    </picture>
+                    <div class="details">
+                        <p>
+                            <b>Product 2</b>
+                        </p>
+                        <samp>$45.00</samp>
+                    </div>
+                    <div class="button">
+                        <p class="star">
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                        </p>
+                        <a href="#">Add Cart</a>
+                             
+                        </a>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wishlist-btn2">
+                        <button id="heart-btn2" class="heart2"></button>
+                    </div> 
+                    <picture>
+                        <img src="Attachments/Featured Products/h-image3.jpeg">
+                    </picture>
+                    <div class="details">
+                        <p>
+                            <b>Product 3</b>
+                        </p>
+                        <samp>$45.00</samp>
+                    </div>
+                    <div class="button">
+                        <p class="star">
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                        </p>
+                        <a href="#">Add Cart</a>
+                             
+                        </a>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wishlist-btn2">
+                        <button id="heart-btn2" class="heart2"></button>
+                    </div> 
+                    <picture>
+                        <img src="Attachments/Featured Products/h-image4.jpeg" >
+                    </picture>
+                    <div class="details">
+                        <p>
+                            <b>Product 4</b>
+                        </p>
+                        <samp>$45.00</samp>
+                    </div>
+                    <div class="button">
+                        <p class="star">
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                        </p>
+                        <a href="#">Add Cart</a>
+                             
+                        </a>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wishlist-btn2">
+                        <button id="heart-btn2" class="heart2"></button>
+                    </div> 
+                    <picture>
+                        <img src="Attachments/Featured Products/h-image5.jpeg">
+                    </picture>
+                    <div class="details">
+                        <p>
+                            <b>Product 5</b>
+                        </p>
+                        <samp>$45.00</samp>
+                    </div>
+                    <div class="button">
+                        <p class="star">
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                        </p>
+                        <a href="#">Add Cart</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wishlist-btn2">
+                        <button id="heart-btn2" class="heart2"></button>
+                    </div> 
+                    <picture>
+                        <img src="Attachments/Featured Products/h-image5.jpeg">
+                    </picture>
+                    <div class="details">
+                        <p>
+                            <b>Product 6</b>
+                        </p>
+                        <samp>$45.00</samp>
+                    </div>
+                    <div class="button">
+                        <p class="star">
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                        </p>
+                        <a href="#">Add Cart</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wishlist-btn2">
+                        <button id="heart-btn2" class="heart2"></button>
+                    </div> 
+                    <picture>
+                        <img src="Attachments/Featured Products/h-image5.jpeg">
+                    </picture>
+                    <div class="details">
+                        <p>
+                            <b>Product 7</b>
+                        </p>
+                        <samp>$45.00</samp>
+                    </div>
+                    <div class="button">
+                        <p class="star">
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                        </p>
+                        <a href="#">Add Cart</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="wishlist-btn2">
+                        <button id="heart-btn2" class="heart2"></button>
+                    </div> 
+                    <picture>
+                        <img src="Attachments/Featured Products/h-image5.jpeg">
+                    </picture>
+                    <div class="details">
+                        <p>
+                            <b>Product 8</b>
+                        </p>
+                        <samp>$45.00</samp>
+                    </div>
+                    <div class="button">
+                        <p class="star">
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                            <strong>&star;</strong>
+                        </p>
+                        <a href="#">Add Cart</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!--
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                    <div class="a">
+                      <div class="item">First Browse for Items</div>
+                      <img src="Attachments/GIFS/search.gif">
+                    </div>
+                    <div class="b">
+                      <div class="item">Then Add Items to Cart<br>and Confirm your Order</div>
+                      <img src="Attachments/GIFS/addcart.gif">
+                    </div>
+                    <div class="c">
+                        <div class="item">Finally Enter Payment & Shipping Info</div>
+                        <img src="Attachments/GIFS/payment.gif">
+                    </div>
+                    <div class="d">
+                        <div class="item">Your Order will be<br>Delivered to You!<br>So Easy!</div>
+                        <img src="Attachments/GIFS/delivery.gif">
+                    </div>
+                    <div class="e">
+                        <div class="item">Tell Us About Your Experience</div>
+                        <img src="Attachments/GIFS/confirm.gif">
+                    </div>
+                    <div class="f">
+                      <div class="item">Become a Member to get Exclusive Deals</div>
+                    </div>
+                    <div class="g">
+                    <div class="item"> </div>
+                    </div>
+                    <div class="h">
+                      <div class="item"> </div>
+                    </div>
+                    <div class="i">
+                      <div class="item"> </div>
+                    </div>
+                    <div class="j">
+                      <div class="item"> </div>
+                    </div>
+                    <div class="k">
+                      <div class="item"> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="next"></div>
+                <div class="prev"></div>
+            </div>
+            -->
+        </section>
+    </section>
+    <script>
+        (function($) {
+        "use strict";
+        $.fn.sliderResponsive = function(settings) {
+            
+                var set = $.extend( 
+                {
+                    slidePause: 4000,
+                    fadeSpeed: 500,
+                    autoPlay: "on",
+                    showArrows: "off", 
+                    hideDots: "off", 
+                    hoverZoom: "on",
+                    titleBarTop: "off"
+                },
+                settings
+                ); 
+                
+                var $slider = $(this);
+                var size = $slider.find("> div").length; //number of slides
+                var position = 0; // current position of carousal
+                var sliderIntervalID; // used to clear autoplay
+                
+                // Add a Dot for each slide
+                $slider.append("<ul></ul>");
+                $slider.find("> div").each(function(){
+                $slider.find("> ul").append('<li></li>');
+                });
+                
+                // Put .show on the first Slide
+                $slider.find("div:first-of-type").addClass("show");
+                
+                // Put .showLi on the first dot
+                $slider.find("li:first-of-type").addClass("showli")
+
+                //fadeout all items except .show
+                $slider.find("> div").not(".show").fadeOut();
+                
+                // If Autoplay is set to 'on' than start it
+                if (set.autoPlay === "on") {
+                    startSlider(); 
+                } 
+                
+                // If showarrows is set to 'on' then don't hide them
+                if (set.showArrows === "on") {
+                    $slider.addClass('showArrows'); 
+                }
+                
+
+                // function to start auto play
+                function startSlider() {
+                sliderIntervalID = setInterval(function() {
+                    nextSlide();
+                }, set.slidePause);
+                }
+
+                //on right arrow click
+                $slider.find("> .right").click(nextSlide)
+
+                //on left arrow click
+                $slider.find("> .left").click(prevSlide);
+                
+                // Go to next slide
+                function nextSlide() {
+                position = $slider.find(".show").index() + 1;
+                if (position > size - 1) position = 0;
+                changeCarousel(position);
+                }
+                
+                // Go to previous slide
+                function prevSlide() {
+                position = $slider.find(".show").index() - 1;
+                if (position < 0) position = size - 1;
+                changeCarousel(position);
+                }
+
+                //when user clicks slider button
+                $slider.find(" > ul > li").click(function() {
+                position = $(this).index();
+                changeCarousel($(this).index());
+                });
+
+                //this changes the image and button selection
+                function changeCarousel() {
+                $slider.find(".show").removeClass("show").fadeOut();
+                $slider
+                    .find("> div")
+                    .eq(position)
+                    .fadeIn(set.fadeSpeed)
+                    .addClass("show");
+                // The Dots
+                $slider.find("> ul").find(".showli").removeClass("showli");
+                $slider.find("> ul > li").eq(position).addClass("showli");
+                }
+
+                return $slider;
+            };
+
+        })(jQuery);
+        $(document).ready(function() {
+            $("#slider1").sliderResponsive({
+            // Using default everything
+                // slidePause: 5000,
+                // fadeSpeed: 800,
+                // autoPlay: "on",
+                // showArrows: "off", 
+                // hideDots: "off", 
+                // hoverZoom: "on", 
+                // titleBarTop: "off"
+            });
+        }); 
+    </script>
+    <script text="text/javascript">
+        $('.heart2').click(function(){
+            if($(this).hasClass('active')){
+                $(this).removeClass('active')
+            } 
+            else {
+                $(this).addClass('active')
+            }
+        });
+        let span = document.getElementsByClassName('btnMovers');
+        let product = document.getElementsByClassName('product'); 
+        let product_page = Math.ceil(product.length/4);
+        let l = 0;
+        let movePer = 27;
+        var max = document.getElementsByClassName("product");
+        let maxMove = max.length*15; //num of products
+        let rightMove = ()=>{
+            l = l + movePer;
+            if(product == 1) 
+            {
+                l = 0;
+            }
+            for(const i of product)
+            {
+                if(l > maxMove)
+                {
+                    l = l - movePer;
+                }
+                i.style.left = '-' + l + '%';
+            }
+        } 
+        let leftMove = ()=>{
+            l = l - movePer;
+            if(l <= 0) 
+            {
+                l = 0;
+            }
+            for(const i of product)
+            {
+                if(product_page > 1)
+                i.style.left = '-' + l + '%';
+            }
+        } 
+        span[1].onclick = ()=>{rightMove();}
+        span[0].onclick = ()=>{leftMove();}
+    </script>
+    <script>
+        /*
+        var carousel = $(".carousel"),
+        items = $(".item"),
+        currdeg  = 0;
+
+        $(".next").on("click", { d: "n" }, rotate);
+        $(".prev").on("click", { d: "p" }, rotate);
+
+        function rotate(e){
+        if(e.data.d=="n"){
+            currdeg = currdeg - 60;
+        }
+        if(e.data.d=="p"){
+            currdeg = currdeg + 60;
+        }
+        carousel.css({
+            "-webkit-transform": "rotateY("+currdeg+"deg)",
+            "-moz-transform": "rotateY("+currdeg+"deg)",
+            "-o-transform": "rotateY("+currdeg+"deg)",
+            "transform": "rotateY("+currdeg+"deg)"
+        });
+            items.css({
+            "-webkit-transform": "rotateY("+(-currdeg)+"deg)",
+            "-moz-transform": "rotateY("+(-currdeg)+"deg)",
+            "-o-transform": "rotateY("+(-currdeg)+"deg)",
+            "transform": "rotateY("+(-currdeg)+"deg)"
+        });
+        }
+        */
+    </script>
+    <script>
+        $('.heart').click(function(){
+            if($(this).hasClass('active')){
+                $(this).removeClass('active')
+            } 
+            else {
+                $(this).addClass('active')
+            }
+        });
+        //
+        let dropdownBtn1 = document.querySelector('.dep1-btn');
+        let menuContent1 = document.querySelector('.subpages-1');
+        var arrowIcon = document.getElementById("angle");
+        dropdownBtn1.addEventListener('click',()=>{
+            if(menuContent1.style.display==="")
+            {
+                menuContent1.style.display="block";
+            } else 
+            {
+                menuContent1.style.display="";
+            }
+        })
+        //
+        let dropdownBtn2 = document.querySelector('.dep2-btn');
+        let menuContent2 = document.querySelector('.subpages-2');
+        dropdownBtn2.addEventListener('click',()=>{
+        if(menuContent2.style.display===""){
+            menuContent2.style.display="block";
+        } else {
+            menuContent2.style.display="";
+        }
+        })
+        //
+        let dropdownBtn3 = document.querySelector('.dep3-btn');
+        let menuContent3 = document.querySelector('.subpages-3');
+        dropdownBtn3.addEventListener('click',()=>{
+        if(menuContent3.style.display===""){
+            menuContent3.style.display="block";
+        } else {
+            menuContent3.style.display="";
+        }
+        })
+        //
+        let dropdownBtn4 = document.querySelector('.dep4-btn');
+        let menuContent4 = document.querySelector('.subpages-4');
+        dropdownBtn4.addEventListener('click',()=>{
+        if(menuContent4.style.display===""){
+            menuContent4.style.display="block";
+        } else {
+            menuContent4.style.display="";
+        }
+        })
+        //
+        let dropdownBtn5 = document.querySelector('.dep5-btn');
+        let menuContent5 = document.querySelector('.subpages-5');
+        dropdownBtn5.addEventListener('click',()=>{
+        if(menuContent5.style.display===""){
+            menuContent5.style.display="block";
+        } else {
+            menuContent5.style.display="";
+        }
+        })
+        //
+        let dropdownBtn6 = document.querySelector('.dep6-btn');
+        let menuContent6 = document.querySelector('.subpages-6');
+        dropdownBtn6.addEventListener('click',()=>{
+        if(menuContent6.style.display===""){
+            menuContent6.style.display="block";
+        } else {
+            menuContent6.style.display="";
+        }
+        })
+        //
+        let dropdownBtn7 = document.querySelector('.dep7-btn');
+        let menuContent7 = document.querySelector('.subpages-7');
+        dropdownBtn7.addEventListener('click',()=>{
+        if(menuContent7.style.display===""){
+            menuContent7.style.display="block";
+        } else {
+            menuContent7.style.display="";
+        }
+        })
+        //
+        let dropdownBtn8 = document.querySelector('.dep8-btn');
+        let menuContent8 = document.querySelector('.subpages-8');
+        dropdownBtn8.addEventListener('click',()=>{
+        if(menuContent8.style.display===""){
+            menuContent8.style.display="block";
+        } else {
+            menuContent8.style.display="";
+        }
+        })
+        //
+        let dropdownBtn9 = document.querySelector('.dep9-btn');
+        let menuContent9 = document.querySelector('.subpages-9');
+        dropdownBtn9.addEventListener('click',()=>{
+        if(menuContent9.style.display===""){
+            menuContent9.style.display="block";
+        } else {
+            menuContent9.style.display="";
+        }
+        })
+        //
+        let dropdownBtn10 = document.querySelector('.dep10-btn');
+        let menuContent10 = document.querySelector('.subpages-10');
+        dropdownBtn10.addEventListener('click',()=>{
+        if(menuContent10.style.display===""){
+            menuContent10.style.display="block";
+        } else {
+            menuContent10.style.display="";
+        }
+        })
+        //
+        let dropdownBtn11 = document.querySelector('.dep11-btn');
+        let menuContent11 = document.querySelector('.subpages-11');
+        dropdownBtn11.addEventListener('click',()=>{
+        if(menuContent11.style.display===""){
+            menuContent11.style.display="block";
+        } else {
+            menuContent11.style.display="";
+        }
+        })
+        //
+        let dropdownBtn12 = document.querySelector('.dep12-btn');
+        let menuContent12 = document.querySelector('.subpages-12');
+        dropdownBtn12.addEventListener('click',()=>{
+        if(menuContent12.style.display===""){
+            menuContent12.style.display="block";
+        } else {
+            menuContent12.style.display="";
+        }
+        })
+        let barsBtn = document.querySelector('.bars');
+        let dropDownContent = document.querySelector('.sidebar');
+        barsBtn.addEventListener('click',()=>{
+        if(dropDownContent.style.display===""){
+            dropDownContent.style.display="block";
+        } else {
+            dropDownContent.style.display="";
+        }
+        })
+
+        let closeBtn = document.querySelector('#close');
+        let dropDownContent2 = document.querySelector('.sidebar');
+        closeBtn.addEventListener('click',()=>{
+        if(dropDownContent2.style.display===""){
+            dropDownContent2.style.display="block";
+        } else {
+            dropDownContent2.style.display="";
+        }
+        })
+    </script>
+</body>   
+</html>
