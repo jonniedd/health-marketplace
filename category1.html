@@ -29,7 +29,7 @@
                     <li><a href="home.html">Blogs</a></li> 
                     <li><a href="home.html">Bookmarks</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
-                    <li><a id="cart-btn" href="home.html"><span class="fa fa-shopping-cart" style="font-size:22px"></span></a></li> 
+                    <li><a id="cart-btn" href="cartindex.html"><span class="fa fa-shopping-cart" style="font-size:22px"></span></a></li> 
                     <li><a href="login.html"><span class="fa fa-user-circle-o" style="font-size:20px"></span></a></li> 
                  </div>
              </ul>
@@ -401,7 +401,7 @@
                         <button type="submit" data-inline="true" id="details-active-btn" class="mini-cart-btn">
                             <i class="fa fa-shopping-cart" style="font-size: 18px;"></i>
                         </button>
-                        <button type="button" onclick="GridSearch()" data-inline="true" id="grid-active-btn" class="grid-active-btn">
+                        <button type="button" data-inline="true" id="grid-active-btn" class="grid-active-btn">
                             <i class="fa fa-th" style="font-size: 18px;"></i>
                         </button>
                         <button type="button" data-inline="true" id="details-active-btn" class="details-active-btn">
@@ -1087,11 +1087,8 @@
                     $(".product__element").css("display", "block");
                     $(".item-list2").css("display", "none");
                     Grid();
-                    clicked = true;
                     //window.location.reload(); //grid search not working without window reload.... :(
-                    //alert("pipa");
-                    //GridSearch();
-                    //alert("kakaka");
+                    GridSearch();
                 });
                 $(".details-active-btn").click(function(){
                     clicked = false;
@@ -1101,11 +1098,6 @@
                     List();
                     ListSearch();
                 });
-                if(clicked == true)
-                {
-                    alert("ya"); //not working
-                    document.getElementsByClassName('grid-active-btn').addEventListener('click', function() { GridSearch(); }, false);
-                }
             /* filter menu */
                 $(document).on('click','.product-filter li', function()
                 {

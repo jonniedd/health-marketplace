@@ -84,14 +84,14 @@
 .navbar2{
     position: fixed;
     width: 100%;
-    padding: 15px 0;
+    padding: 1.5% 0;
     background-color: rgb(42,124,111);
     font-family: 'Raleway',sans-serif;
     z-index: 10;
     transition: all 0.3s ease;
 }
 .navbar2.active{
-    padding: 15px;
+    padding: 1.5% 0;
     background: linear-gradient();
 }
 .navbar2 .max-width{
@@ -136,22 +136,24 @@
     padding: 5;
 }
 .navbar2 .logo img{
+    position: fixed;
     height: 40px;
     width: 160px;
-    margin-bottom: -10px;
-    margin-bottom: -10px;
-    margin-left: -70px;
+    top: 2%;
+    right: 86%;
+    left: 0;
+    margin: 0 auto;
 }
 .navbar2 .search .search-bar{
     position: absolute;
     width: 410px;
-    margin-left: -170px;
+    margin-left: -10%;
     border-radius: 5px;
     background: rgba(0, 47, 49, 0.767);
     display: flex;
     align-items: center;
     padding: 5px 15px;
-    margin-top: -20px;
+    margin-top: -2%;
     -webkit-backdrop-filter: blur(4px) saturate(180%);
             backdrop-filter: blur(4px) saturate(180%);
 }
@@ -1983,7 +1985,7 @@ screen and (min-height: 900px) {
     color: #ffffff;
     width: 100%;
     height: 10%;
-    padding: 15px 0px 0px 20px;
+    padding: 1.5% 0px 0px 2%;
     font-size: 30px;
 }
 .category-section .category-container{
@@ -1996,7 +1998,7 @@ screen and (min-height: 900px) {
     height: 60%;
     margin-top: 10%;
     margin-left: 4%;
-    padding-top: 20px 0 20px 20px;
+    padding-top: 2% 0 20px 2%;
 }
 .category-section .category-container h3{
     padding-top: 5%;
@@ -2012,7 +2014,7 @@ screen and (min-height: 900px) {
     display: block;
     justify-content: center;
     align-items: center;
-    margin: 5px;
+    margin: 0.5%;
 }
 .product-filter li{
     margin-top: 8%;
@@ -2077,7 +2079,7 @@ screen and (min-height: 900px) {
     transition: all 0.3s ease;
 }
 .product-grid-container{
-    margin-top: -450px;
+    margin-top: -540%;
 }
 .category-section .category-container .cart__items {
     position: absolute;
@@ -2341,7 +2343,7 @@ screen and (min-height: 900px) {
     text-align: left;
     color: transparent;
     font-size: 17px;
-    padding: 3px;
+    padding: 0.3%;
     margin-left: 6%;
 }
 .category-section .filter-list a{
@@ -2366,13 +2368,13 @@ screen and (min-height: 900px) {
     position: relative;
 }
 .product__element .heart3{
-    position: absolute;
+    position: fixed;
     background: url(Attachments/Icons/heart1.png);
     background-size: 22px 22px;
     background-repeat: no-repeat;
     border: none;
-    margin-top: 30%;
-    margin-left: 225%;
+    margin-top: 2%;
+    margin-left: 14%;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -2380,13 +2382,13 @@ screen and (min-height: 900px) {
     transition: 0.1s ease-out;
 }
 .product__element .wishlist-btn3 .heart3:hover{
-    position: absolute;
+    position: fixed;
     background: url(Attachments/Icons/heart2.png);
     background-size: 27px 27px;
     background-repeat: no-repeat;
     border: none;
-    margin-top: 27%;
-    margin-left: 222%;
+    margin-top: 2%;
+    margin-left: 13.8%;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -2394,13 +2396,13 @@ screen and (min-height: 900px) {
     transition: 0.07s ease-out; 
 }
 .product__element .wishlist-btn3 .heart3.active{
-    position: absolute;
+    position: fixed;
     background: url(Attachments/Icons/heart2.png);
     background-size: 22px 22px;
     background-repeat: no-repeat;
     border: none;
-    margin-top: 30%;
-    margin-left: 225%;
+    margin-top: 2%;
+    margin-left: 14%;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -2424,7 +2426,7 @@ screen and (min-height: 900px) {
     color: #ffffff;
     font-weight: 600;
     font-size: 13px;
-    width: 180px;
+    width: 455%;
     display: flex;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -2442,8 +2444,8 @@ screen and (min-height: 900px) {
     width: 200px;
     display: flex;
     margin-left: 50%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 29%;
+    padding-bottom: 29%;
     font-weight: 300;
 }
 .product__element .item-description{
@@ -2465,9 +2467,9 @@ screen and (min-height: 900px) {
     margin-left: 20%;
     letter-spacing: 3px;
     margin-top: -80%;
-    margin-left: 115px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-left: 280%;
+    padding-top: 20%;
+    padding-bottom: 20%;
     color: white;
 }
 .btn__add__to__cart{
@@ -2583,18 +2585,18 @@ screen and (min-height: 900px) {
 .item-list2 .product__element2{
     width: 50%;
     height: 50%;
-    padding: 20px 20px 20px 20px;
+    padding: 2% 2% 2% 2%;
     margin-left: -100px;
     position: relative;
 }
 .product__element2 .heart3{
-    position: absolute;
+    position: fixed;
     background: url(Attachments/Icons/heart1.png);
     background-size: 22px 22px;
     background-repeat: no-repeat;
     border: none;
-    margin-top: 5.5%;
-    margin-left: 41.7%;
+    margin-top: 2%;
+    margin-left: 14%;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -2602,13 +2604,13 @@ screen and (min-height: 900px) {
     transition: 0.1s ease-out;
 }
 .product__element2 .wishlist-btn3 .heart3:hover{
-    position: absolute;
+    position: fixed;
     background: url(Attachments/Icons/heart2.png);
     background-size: 27px 27px;
     background-repeat: no-repeat;
     border: none;
-    margin-top: 5%;
-    margin-left: 41.2%;
+    margin-top: 2%;
+    margin-left: 13.8%;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -2616,13 +2618,13 @@ screen and (min-height: 900px) {
     transition: 0.07s ease-out; 
 }
 .product__element2 .wishlist-btn3 .heart3.active{
-    position: absolute;
+    position: fixed;
     background: url(Attachments/Icons/heart2.png);
     background-size: 22px 22px;
     background-repeat: no-repeat;
     border: none;
-    margin-top: 5.5%;
-    margin-left: 41.7%;
+    margin-top: 2%;
+    margin-left: 14%;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -2646,7 +2648,7 @@ screen and (min-height: 900px) {
     color: #ffffff;
     font-weight: 600;
     font-size: 25px;
-    width: 500px;
+    width: 540%;
     display: flex;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -2692,6 +2694,8 @@ screen and (min-height: 900px) {
     letter-spacing: 3px;
     margin-left: 165%;
     margin-top: -19%;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
     font-size: 25px;
     color: white;
 }
@@ -3424,10 +3428,10 @@ form .post-btn button:active{
 .about .health-heart{
     width: 330px;
     height: 330px;
-    margin-top: 300px;
-    margin-left: 790px;
+    margin-top: 23%;
+    margin-left: 61.8%;
     -webkit-filter: brightness(2);
-            filter: brightness(2);
+    filter: brightness(2);
 }
 .about .about-title{
     margin-top: -530px;
@@ -3598,8 +3602,8 @@ form .post-btn button:active{
 .about .med-box{
     position: relative;
     width: 285px;
-    margin-top: 680px;
-    margin-left: 810px;
+    margin-top: 53%;
+    margin-left: 63.4%;
     height: 285px;
     filter: brightness(1.1);
 }
