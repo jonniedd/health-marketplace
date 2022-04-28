@@ -923,7 +923,7 @@ screen and (min-height: 900px) {
         display:flex;
         position: absolute;
         left: 48.7%;
-        bottom: -92%;
+        bottom: -90%;
         border-radius: 50px;
         cursor: pointer;
         transition: 0.3s ease;
@@ -1672,15 +1672,15 @@ screen and (min-height: 900px) {
 .shop .leaf2{
     width: 240px;
     height: 240px;
-    margin-top: 65px;
-    margin-left: 5px;
+    margin-top: 6.5%;
+    margin-left: 0.5%;
     transform: rotate(-35deg);
     z-index: 2;
 }
 .shop .leaf3{
     width: 240px;
     height: 240px;
-    margin-left: 780px;
+    margin-left: 61%;
     transform: rotate(35deg);
     z-index: 2;
 }
@@ -1714,8 +1714,8 @@ screen and (min-height: 900px) {
     overflow: hidden;
     height: 48vh;
     width: 100vw;
-    padding: 5px;
-    padding-left: 10px;
+    padding: 0.5%;
+    padding-left: 1%;
     font-family:'Raleway',sans-serif;
     background-color: rgba(0, 32, 31, 0.548);
     border-top: 3px;
@@ -1725,7 +1725,6 @@ screen and (min-height: 900px) {
     border-bottom-style: solid;
     border-bottom-color: rgba(176, 255, 189, 0.253);
     color: white;
-    z-index: 5;
     margin-top: 45px;
     margin-right: auto;
     z-index: 2;
@@ -1736,7 +1735,7 @@ screen and (min-height: 900px) {
 .department-previews .preview-products{
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 0.5%;
     text-align: center;
     font-family:'Raleway',sans-serif;
     text-transform: uppercase;
@@ -1747,8 +1746,8 @@ screen and (min-height: 900px) {
     overflow-x: auto;
     scroll-behavior: smooth;
     overflow-y: hidden;
-    margin-right: -90px;
-    margin-left: -90px;
+    margin-right: -7.4%;
+    margin-left: -7.4%;
 }
 .department-previews .product-box::-webkit-scrollbar{
     display: none;
@@ -1757,8 +1756,8 @@ screen and (min-height: 900px) {
     flex: 0 0 auto;
     width: 250px;
     height: 450px;
-    margin: 10px;
-    margin-left: 38.4px;
+    margin: 1%;
+    margin-left: 3.84%;
     -webkit-filter: brightness(0.7);
     filter: brightness(0.7);
 }
@@ -1789,8 +1788,8 @@ screen and (min-height: 900px) {
     height: 90px;
     width: 90px;
     cursor: pointer;
-    right: -7px;
-    top: 12px;
+    right: -3%;
+    top: 4%;
     transition: 0.1s ease-in;
     transition: 0.1s ease-out;
 }
@@ -1803,8 +1802,8 @@ screen and (min-height: 900px) {
     border-radius: 5px;
     border: none;
     color: white;
-    right: -5px;
-    top: 10px;
+    right: -2%;
+    top: 3%;
     height: 90px;
     width: 90px;
     cursor: pointer;
@@ -1824,8 +1823,8 @@ screen and (min-height: 900px) {
     height: 90px;
     width: 90px;
     cursor: pointer;
-    right: -7px;
-    top: 12px;
+    right: -3%;
+    top: 4%;
     transition: 0.1s ease-in;
     transition: 0.1s ease-out;
 }
