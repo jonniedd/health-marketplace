@@ -478,7 +478,7 @@
                                   <input type="hidden" name="" id="product__id2" value="3" />
                                   <button id = "open-modal-btn2" class="open-modal-btn2" aria-haspopup="true">More</button>
                                   <img src="Attachments/Sample-Products/sample3.jpeg" alt="" srcset="" id="product-image2" />
-                                  <h4 class="product__name2">ashwagandha tablets</h4>
+                                  <h4 class="product__name2">Arnica Flower Salve</h4>
                                   <h5 class="product__price2">$15.99</h5>
                                     <p class="star-list">
                                         <strong>&star;</strong>
@@ -830,7 +830,7 @@
                           <input type="hidden" name="" id="product__id" value="3" />
                           <button id = "open-modal-btn" class="open-modal-btn" aria-haspopup="true">More</button>
                           <img src="Attachments/Sample-Products/sample3.jpeg" alt="" srcset="" id="product-image" />
-                          <h4 class="product__name">ashwagandha tablets</h4>
+                          <h4 class="product__name">Arnica Flower Salve</h4>
                           <h5 class="product__price">$15.99</h5>
                             <p class="star">
                                 <strong>&star;</strong>
@@ -1402,6 +1402,11 @@
         <script text="text/javascript"> 
                 var data = 0;
                 $(".open-modal-btn").on("click", function(){
+                    $(".modal-overlay").addClass("active");
+                    $(".category-section").addClass('stop-scrolling');
+                    
+                });
+                $(".open-modal-btn2").on("click", function(){
                     $(".modal-overlay").addClass("active");
                     $(".category-section").addClass('stop-scrolling');
                     
