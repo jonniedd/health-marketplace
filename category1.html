@@ -296,7 +296,7 @@
                                 <strong>&star;</strong>
                                 <strong>&star;</strong>
                             </p> 
-                            <span class="modal-price" id="item-price2">$20.00</span>
+                            <span class="modal-price" id="item-price2">$10.00</span>
                             <div class="modal-description" id="product-reviews-section">
                                 <p>Item Description:<br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, est. Aspernatur, aut. Aliquam, laudantium libero hic impedit at placeat, ad iusto ex accusamus quod unde corrupti similique beatae eaque eligendi.</p>
                             </div>
@@ -1107,6 +1107,7 @@
             function List(){
                 $(document).ready(function()
                 {
+                    $('.product__element').hide();
                     $('.list').click(function()
                     {
                         const value = $(this).attr('data-filter');
@@ -1120,7 +1121,7 @@
                             $('.product__element2').not('.'+ value).hide('5000');
                             $('.product__element2').filter('.'+ value).show('5000');
 
-                            $('.product__element').not('.'+ value).hide('5000');
+                            $('.product__element').not('.'+ value).hide('0000');
                             $('.product__element').filter('.'+ value).hide('5000');
                         }
                     });
