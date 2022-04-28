@@ -116,8 +116,8 @@ input::-webkit-outer-spin-button
     background:hsl(0, 0%, 70%);
 }
 
-/*navbar1 styling ===================================================================================== */
-.navbar1{
+/*navbar2 styling ==================================================================================== */
+.navbar2{
     position: fixed;
     width: 100%;
     padding: 15px 0;
@@ -126,30 +126,30 @@ input::-webkit-outer-spin-button
     z-index: 10;
     transition: all 0.3s ease;
 }
-.navbar1.active{
+.navbar2.active{
     padding: 15px;
     background: linear-gradient();
 }
-.navbar1 .max-width{
+.navbar2 .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar1 .menu li{
+.navbar2 .menu li{
     list-style: none;
     display: inline-block;
     margin-right: -60px;
     margin-left: 80px;
     margin-bottom: 10px;
 }
-.navbar1 .menu li a{
+.navbar2 .menu li a{
     color: rgb(196, 255, 235);
     font-weight: 300;
     font-size: 16px;
     transition: 0.25s ease-in;
     transition: 0.25s ease-out;
 }
-.navbar1 .border-box li a:hover{
+.navbar2 .border-box li a:hover{
     background-color: rgb(200, 255, 238);
     border: 2.5px; 
     border-style: solid;
@@ -159,17 +159,10 @@ input::-webkit-outer-spin-button
     transition: 0.25s ease-in;
     transition: 0.25s ease-out;
 }
-.navbar1 .menu li a:hover{
+.navbar2 .menu li a:hover{
     color: rgb(42,124,111);
 }
-.navbar1 .logo img{
-    height: 40px;
-    width: 160px;
-    margin-bottom: -10px;
-    margin-bottom: -10px;
-    margin-left: -70px;
-}
-.navbar1 .border-box li a{
+.navbar2 .border-box li a{
     border: 3.5px; 
     border-style: solid; 
     border-color: rgb(42,124,111);
@@ -178,35 +171,94 @@ input::-webkit-outer-spin-button
     text-align: center;
     padding: 5;
 }
-
-.container {
-    max-width: 1400px;
-    min-height: 100vh;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+.navbar2 .logo img{
+    height: 40px;
+    width: 160px;
+    margin-bottom: -10px;
+    margin-bottom: -10px;
+    margin-left: -70px;
 }
-
-.heading {
-    font-size: var(--fs-28);
-    font-weight: var(--fw-6);
-    color: var(--onyx);
-    border-bottom: 1px solid var(--gainsboro);
-    padding-top: 80px;
-    padding-bottom: 20px;
+.navbar2 .search .search-bar{
+    position: absolute;
+    width: 410px;
+    margin-left: -170px;
+    border-radius: 5px;
+    background: rgba(0, 47, 49, 0.767);
     display: flex;
     align-items: center;
-    gap: 20px;
+    padding: 5px 15px;
+    margin-top: -20px;
+    -webkit-backdrop-filter: blur(4px) saturate(180%);
+            backdrop-filter: blur(4px) saturate(180%);
 }
-
-.heading i {
-    font-size: 40px;
+.navbar2 .search .search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 5px 0px;
+    font-size: 15px;
+    color: rgb(224, 255, 248);
+    font-family: 'Raleway',sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 100;
+    transition: 0.2s ease-in;
 }
-
-.item-flex {
-    display: flex;
-    flex-grow: 1;
+::-webkit-input-placeholder{
+    color: rgb(224, 255, 248);
 }
+::-moz-placeholder{
+    color: rgb(224, 255, 248);
+}
+:-ms-input-placeholder{
+    color: rgb(224, 255, 248);
+}
+::-ms-input-placeholder{
+    color: rgb(224, 255, 248);
+}
+::placeholder{
+    color: rgb(224, 255, 248);
+}
+.navbar2 .search .search-bar img{
+    width: 15px;
+    transition: 0.22s ease-out;
+}
+.navbar2 .search .search-bar img:hover{
+    width: 20px;
+    transition: 0.2s ease-in;
+}
+.navbar2 .search .search-bar input:hover {
+    font-size: 14px;
+    transition: 0.2s ease-in;
+    padding: 5.6px 0px;
+}
+.navbar2 .search .search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background: rgba(196, 255, 235, 0.5);
+    cursor: pointer;
+}
+.navbar2 .search .search-bar button:hover{
+    border: 0;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background: rgb(196, 255, 235);
+    transition: 0.2s ease-in;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+.navbar2 .search .search-bar button:active{
+    border: 0;
+    border-radius: 50%;
+    width: 24.5px;
+    height: 24.5px;
+    background: rgb(67, 179, 136);
+    transition: 0.2s ease;
+    cursor: pointer;
 
     /* --CHECKOUT SECTION-- */
 
